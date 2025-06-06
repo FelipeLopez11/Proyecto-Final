@@ -1,0 +1,281 @@
+html,
+body {
+  margin: 0; /* Fuera márgenes por defecto */
+  padding: 0; /* Fuera rellenos por defecto */
+  width: 100%; /* 100 % del ancho (horizontal) */
+  height: 100%; /* 100 % del alto (vertical)   */
+}
+
+/* -------------------------------------------------------
+   2. DISTRIBUCIÓN VERTICAL CON FLEXBOX
+   El body actúa como contenedor principal (“padre flex”):
+   coloca header, nav, main y footer uno debajo de otro
+   y empuja el footer al fondo gracias a flex: 1 en <main>.
+-------------------------------------------------------*/
+body {
+  display: flex; /* Activamos Flexbox        */
+  flex-direction: column; /* Dirección = columna      */
+  min-height: 100vh; /* 100 % de la altura vista */
+}
+
+/* --- Google Font: Baumans --- */
+@import url("https://fonts.googleapis.com/css2?family=Iceland&display=swap");
+
+/* 1. TOP-BAR (más alta, con transparencia ‘glassmorphism’ gris) ── */
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 999;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  min-height: 50px; /* ⇪ grosor vertical */
+  text-align: center;
+  padding: 0 2.5rem;
+
+  /* Fondo semitransparente en escala de grises + difuminado */
+  background: rgba(12, 208, 32, 0.599); /* gris 65 % opacidad   */
+  backdrop-filter: blur(8px); /* efecto ‘vidrio esmerilado’ */
+
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* 2. LOGO / TÍTULO ────────────────────────────────────────────── */
+.brand {
+  margin: 0;
+  font-family: "Iceland", futurista; /* Tipografia futurista llamativa */
+  font-weight: 500;
+  font-size: 2.2rem;
+  color: #010101;
+  letter-spacing: 0.8px;
+  gap: 4rem;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+.brand img {
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
+}
+
+/* 3. MENÚ (mejor separación y orden) ─────────────────────────── */
+.nav-menu {
+  list-style: none;
+  display: flex;
+  gap: 2.5rem; /* Espacio uniforme entre enlaces */
+  margin: 0;
+  padding: 0;
+}
+
+/* Enlaces base */
+.nav-menu a {
+  position: relative;
+  font: 600 1.05rem "Poppins", sans-serif;
+  color: #000000;
+  text-decoration: none;
+  opacity: 0.9;
+  transition: opacity 0.25s ease;
+}
+
+/* Hover: sub-rayado animado – ajustamos grosor y color */
+.nav-menu a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -8px; /* un poco más abajo porque la barra es más alta */
+  width: 100%;
+  height: 2px;
+  background: #f2ff00; /* turquesa brillante; cambia si quieres */
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: transform 0.3s ease;
+}
+.nav-menu a:hover {
+  opacity: 1;
+}
+.nav-menu a:hover::after {
+  transform: scaleX(1);
+}
+
+/* Pestaña activa siempre marcada */
+.nav-menu a.active,
+.nav-menu a.active:hover {
+  opacity: 1;
+}
+.nav-menu a.active::after {
+  transform: scaleX(1);
+  background: #fff; /* Línea blanca para la página actual */
+}
+
+/* 4. Responsive simple (≤ 720 px) ─────────────────────────────── */
+@media (max-width: 720px) {
+  .navbar {
+    height: 72px;
+    padding: 0 1rem;
+  }
+  .nav-menu {
+    gap: 1rem;
+    font-size: 0.9rem;
+  }
+}
+
+/* -------------------------------------------------------
+   5. CONTENIDO PRINCIPAL
+   flex: 1  → ocupa todo el espacio restante
+   (empuja el footer hacia abajo si hay poco contenido).
+-------------------------------------------------------*/
+/* =============================================================
+   BASE (cambiamos tipografía base, SIN la fuente del header)
+   =============================================================*/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+} 
+body {
+  font-family: "Segoe UI", system-ui, sans-serif; /* fuente estándar, NO la del header */
+  line-height: 1.6;
+  color: #0a0a0a;
+  background: #ffffff;
+}
+
+/* =============================================================
+   SECCIONES GENERALES  (h2 arriba + grid responsivo debajo)
+   =============================================================*/
+section {
+  width: 100%;
+  max-width: 1200px;
+  margin-inline: auto;
+  padding: 3rem 1rem;
+  scroll-margin-top: 96px; /* evita quedar tapado por la navbar */
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+/* ---------- Encabezado H2 de cada sección ---------- */
+section > h2 {
+  grid-column: 1/-1; /* ocupa todo el ancho de la grilla */
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  border-left: 6px solid #38d637; /* verde a juego con la navbar */
+  padding-left: 0.75rem;
+}
+
+/* =============================================================
+   INTRO DE SECCIÓN (tarjeta introductoria “hero”)
+   – Primer <article> dentro de cada sección.
+   – Imagen + texto flexibles; ocupa 100 % de la grilla.
+   =============================================================*/
+section > article:first-of-type {
+  grid-column: 1/-1; /* ocupa todo el ancho */
+  background: #f4f6fa;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 2rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+@media (min-width: 880px) {
+  section > article:first-of-type {
+    flex-direction: row;
+    align-items: center;
+  }
+}
+section > article:first-of-type img {
+  width: 100%;
+  max-width: 380px; /* limite razonable */
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+}
+section > article:first-of-type .texto {
+  flex: 1;
+}
+section > article:first-of-type h3,
+section > article:first-of-type h2 {
+  font-size: 1.5rem;
+  margin-bottom: 0.75rem;
+}
+section > article:first-of-type p {
+  font-size: 1rem;
+  text-align: justify;
+}
+
+/* =============================================================
+   TARJETAS / CONSEJOS  (resto de <article>)
+   – separadas visiblemente de la intro.
+   =============================================================*/
+article {
+  background: #f9faff;
+  border: 2px solid #b2ffb0; /* marco suave verde claro */
+  border-radius: 10px;
+  padding: 1.25rem;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.06);
+  transition: transform 0.25s;
+}
+article:hover {
+  transform: translateY(-4px);
+}
+
+article h3 {
+  font-size: 1.25rem;
+  margin-bottom: 0.75rem;
+}
+article p,
+article li {
+  font-size: 0.95rem;
+}
+article ul {
+  list-style: disc;
+  margin-left: 1.25rem;
+  margin-bottom: 1rem;
+}
+
+article img {
+  width: 100%;
+  height: auto;
+  margin-top: 1rem;
+  border-radius: 6px;
+  object-fit: cover;
+}
+
+/* =============================================================
+   COLORES DE FONDO ALTERNOS POR SECCIÓN (opcional)
+   =============================================================*/
+.section2 {
+  background: #fff;
+} /* Información General */
+.section3 {
+  background: #e0fff8;
+} /* Mantenimiento y P. */
+
+.footer {
+  background-color: #067860; /* azul oscuro ecológico */
+  color: #ecf0f1; /* texto claro */
+  padding: 40px 0 20px;
+  font-family: "Segoe UI", sans-serif;
+}
+.footer p {
+  color: #fff;
+  text-align: center; /* Centrado del texto */
+}
+
+/* -------------------------------------------------------
+   7. MEDIA QUERY (pantallas pequeñas ≤ 600 px)
+   Ajustamos espaciado/texto para móviles.
+-------------------------------------------------------*/
+@media (max-width: 600px) {
+  .header,
+  .navbar1,
+  main,
+  .footer {
+    padding: 0.75rem; /* Un poco menos de relleno */
+    font-size: 0.9rem; /* Texto ligeramente menor  */
+  }
+}

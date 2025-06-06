@@ -11,72 +11,80 @@
 <body>
 
     <!-- HTML DE LA BARRA Y EL NAVBAR -->
-    <header class="header">Energia rinnovabile</header>
-    <nav class="navbar1">
-        <ul>
-            <li><a href="index.html">Energia Rinnovabile</a></li>
-            <li><a href="#">Barra busqueda</a></li>
-            <li><a id="iniciar_sesionBtn" class="iniciar_sesion hidden" href="login.html"><img src="icons/login.png"
-                        class="login_icon" alt="">Iniciar sesión</a></li>
-            <li><a id="cerrar_sesionBtn" class="cerrar_sesion hidden" href="login.html"><img src="icons/logout.png"
-                        class="login_icon" alt="">Cerrar sesión</a></li>
-            <li><a href="ventajas_solar.html">Visualización Consumo</a></li>
-            <li><a href="Funcionamiento.html">Páneles Solares</a></li>
-            <li><a href="nosotros.html">¿Quiénes Somos?</a></li>
-        </ul>
-    </nav>
+    <!-- ▸ BARRA SUPERIOR MODERNA -->
+    <header class="navbar">
+        <h1 class="brand">
+            <img src="img/panel-solar.png" alt="Icono panel solar" />
+            Energia rinnovabile
+        </h1>
 
+        <nav>
+            <ul class="nav-menu">
+                <li><a class="active" href="index.html">Inicio</a></li>
+                <li><a href="#">Barra búsqueda</a></li>
+                <li>
+                    <a class="active hidden" id="iniciar_sesionBtn" href="login.html">Iniciar sesión</a>
+                </li>
+                <li>
+                    <a id="cerrar_sesionBtn" class="active hidden" href="index.html">Cerrar sesión</a>
+                </li>
+                <li><a class="active" href="ventajas_solar.html">Visualización Consumo</a></li>
+                <!-- Página actual: Páneles Solares -->
+                <li>
+                    <a class="active" href="Funcionamiento.html">Páneles Solares</a>
+                </li>
+                <li><a class="active" href="nosotros.html">¿Quiénes Somos?</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <div class="img-header">
         <img class="contenido-img" src="img/energia-que.jpg" alt="">
-    </div>
     <!-- TERMINA EL HTML DE LA BARRA Y EL CSS -->
 
     <!-- COMIENZA HTML DE HEADER Y MAIN -->
 
-        <section class="definicion-energias">
-            <h1>¿Qué es la energía renovable?</h1>
-            <p>Las energías renovables son tipos de energía que vienen de recursos naturales que se creen
-                inagotables entre los humanos. Esto es porque están disponibles en recursos como el sol y el agua.
-                Diferente a las energías convencionales como los combustibles fósiles, lo que hace que las energías
-                limpias sean buenas es que no se agotan cuando se usan, algo que hace una opción ͏sostenible para
-                llenar tanto las necesidades ͏actuales como las que vendrán. También su uso genera menos daño al
-                medio ambiente ya que por lo general no generan a gran escala emisiones contaminantes, ayudando así
-                a la disminución del calentamiento global. </p>
-        </section>
+    <section class="definicion-energias">
+        <h1>¿Qué es la energía renovable?</h1>
+        <p>Las energías renovables son tipos de energía que vienen de recursos naturales que se creen
+            inagotables entre los humanos. Esto es porque están disponibles en recursos como el sol y el agua.
+            Diferente a las energías convencionales como los combustibles fósiles, lo que hace que las energías
+            limpias sean buenas es que no se agotan cuando se usan, algo que hace una opción ͏sostenible para
+            llenar tanto las necesidades ͏actuales como las que vendrán. También su uso genera menos daño al
+            medio ambiente ya que por lo general no generan a gran escala emisiones contaminantes, ayudando así
+            a la disminución del calentamiento global. </p>
+    </section>
 
 
-        <section class="tipos-energias">
-            <h2>Algunos tipos de energías renovables</h2>
-            <p>Entre las principales formas de energía renovable se encuentra la energía solar, que utiliza la
-                radiación del sol para generar electricidad o calor. Otra fuente importante es la energía eólica,
-                que convierte la fuerza del viento en electricidad. También destaca la energía hidroeléctrica, que
-                utiliza el movimiento del agua, generalmente en presas o ríos, para generar energía eléctrica de
-                manera eficiente </p>
+    <section class="tipos-energias">
+        <h2>Algunos tipos de energías renovables</h2>
+        <p>Entre las principales formas de energía renovable se encuentra la energía solar, que utiliza la
+            radiación del sol para generar electricidad o calor. Otra fuente importante es la energía eólica,
+            que convierte la fuerza del viento en electricidad. También destaca la energía hidroeléctrica, que
+            utiliza el movimiento del agua, generalmente en presas o ríos, para generar energía eléctrica de
+            manera eficiente </p>
 
-        </section>
+    </section>
 
-        <div class="layout-grid">
+    <div class="layout-grid">
 
-            <main class="main-content">
+        <main class="main-content">
 
-                <section class="item" onclick="openModal('modal-energia')">
-                    <h3>Energía hidroeléctrica</h3>
-                    <img src="img/hidroelectrica1.jpg" alt="Energia hidroelectica" />
-                </section>
+            <section class="item" onclick="openModal('modal-energia')">
+                <h3>Energía hidroeléctrica</h3>
+                <img src="img/hidroelectrica1.jpg" alt="Energia hidroelectica" />
+            </section>
 
-                <section class="item" onclick="openModal('modal-innovacion')">
-                    <h3>Energía solar</h3>
-                    <img src="img/solar1.jpg" alt="Energia Solar" />
-                </section>
+            <section class="item" onclick="openModal('modal-innovacion')">
+                <h3>Energía solar</h3>
+                <img src="img/solar1.jpg" alt="Energia Solar" />
+            </section>
 
-                <section class="item" onclick="openModal('modal-fuerza')">
-                    <h3>Energía eólica</h3>
-                    <img src="img/eolica1.jpg" alt="Solar urbano" />
-                </section>
-            </main>
-        </div>
+            <section class="item" onclick="openModal('modal-fuerza')">
+                <h3>Energía eólica</h3>
+                <img src="img/eolica1.jpg" alt="Solar urbano" />
+            </section>
+        </main>
+    </div>
 
 
 
