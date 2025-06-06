@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Energías solar renovable</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- HTML DE LA BARRA Y EL NAVBAR -->
+    <header class="header">Energia rinnovabile</header>
+    <nav class="navbar1">
+        <ul>
+            <li><a href="index.html">Energia Rinnovabile</a></li>
+            <li><a href="#">Barra busqueda</a></li>
+            <li><a id="iniciar_sesionBtn" class="iniciar_sesion hidden" href="login.html"><img src="icons/login.png"
+                        class="login_icon" alt="">Iniciar sesión</a></li>
+            <li><a id="cerrar_sesionBtn" class="cerrar_sesion hidden" href="login.html"><img src="icons/logout.png"
+                        class="login_icon" alt="">Cerrar sesión</a></li>
+            <li><a href="ventajas_solar.html">Visualización Consumo</a></li>
+            <li><a href="Funcionamiento.html">Páneles Solares</a></li>
+            <li><a href="nosotros.html">¿Quiénes Somos?</a></li>
+        </ul>
+    </nav>
+
+    </header>
+
+    <div class="img-header">
+        <img class="contenido-img" src="img/energia-que.jpg" alt="">
+    </div>
+    <!-- TERMINA EL HTML DE LA BARRA Y EL CSS -->
+
+    <!-- COMIENZA HTML DE HEADER Y MAIN -->
+
+        <section class="definicion-energias">
+            <h1>¿Qué es la energía renovable?</h1>
+            <p>Las energías renovables son tipos de energía que vienen de recursos naturales que se creen
+                inagotables entre los humanos. Esto es porque están disponibles en recursos como el sol y el agua.
+                Diferente a las energías convencionales como los combustibles fósiles, lo que hace que las energías
+                limpias sean buenas es que no se agotan cuando se usan, algo que hace una opción ͏sostenible para
+                llenar tanto las necesidades ͏actuales como las que vendrán. También su uso genera menos daño al
+                medio ambiente ya que por lo general no generan a gran escala emisiones contaminantes, ayudando así
+                a la disminución del calentamiento global. </p>
+        </section>
+
+
+        <section class="tipos-energias">
+            <h2>Algunos tipos de energías renovables</h2>
+            <p>Entre las principales formas de energía renovable se encuentra la energía solar, que utiliza la
+                radiación del sol para generar electricidad o calor. Otra fuente importante es la energía eólica,
+                que convierte la fuerza del viento en electricidad. También destaca la energía hidroeléctrica, que
+                utiliza el movimiento del agua, generalmente en presas o ríos, para generar energía eléctrica de
+                manera eficiente </p>
+
+        </section>
+
+        <div class="layout-grid">
+
+            <main class="main-content">
+
+                <section class="item" onclick="openModal('modal-energia')">
+                    <h3>Energía hidroeléctrica</h3>
+                    <img src="img/hidroelectrica1.jpg" alt="Energia hidroelectica" />
+                </section>
+
+                <section class="item" onclick="openModal('modal-innovacion')">
+                    <h3>Energía solar</h3>
+                    <img src="img/solar1.jpg" alt="Energia Solar" />
+                </section>
+
+                <section class="item" onclick="openModal('modal-fuerza')">
+                    <h3>Energía eólica</h3>
+                    <img src="img/eolica1.jpg" alt="Solar urbano" />
+                </section>
+            </main>
+        </div>
+
+
+
+
+    <div id="modal-energia" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal ('modal-energia')">&times;</span>
+            <p>
+                <!-- Uso "<b></b>" para colocar en negrita -->
+                La <b>energía hidroeléctrica</b> utiliza el movimiento del agua, normalmente almacenada en un depósito,
+                para hacer girar una turbina conectada a un generador. Es una de las formas más antiguas de uso de
+                energía y sigue siendo la mayor fuente de energía renovable del mundo en términos de capacidad
+                instalada.
+            </p>
+        </div>
+    </div>
+
+    <div id="modal-innovacion" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal ('modal-innovacion')">&times;</span>
+            <p>
+                La <b> energía solar </b> usa la luz del sol para generar calor o electricidad. Hay dos maneras
+                principales de tomar esta energía: la energía solar fotovoltaica, que cambia de manera directa la luz
+                solar en electricidad con celdas solares; y la energía solar térmica, que emplea colectores solares para
+                caliente agua o aire usado en casas, negocios o en sistemas de calor.
+            </p>
+        </div>
+    </div>
+
+    <div id="modal-fuerza" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal ('modal-fuerza')">&times;</span>
+            <p>
+                La <b>energía eólica</b> se genera mediante el movimiento del aire. Las turbinas eólicas convierten la
+                energía cinética del viento en energía mecánica, que luego se convierte en energía eléctrica mediante un
+                generador. Esta fuente de energía ha experimentado un importante crecimiento en las últimas décadas,
+                especialmente en países como Alemania, España, China y Estados Unidos
+            </p>
+        </div>
+    </div>
+
+    <!-- INICIO DE CONSUMO, INNOVACION Y TENDENCIAS Y COMUNIDADES ENERGETICAS -->
+    <div class="complemento">
+        <div class="consumo">
+            <div>
+                <img src="img/consumo1.jpg" alt="Consumo de energía">
+            </div>
+            <div>
+                <h2>El consumo de energía</h2>
+                <hr>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non ex atque repellat qui harum! Repellendus
+                    culpa animi iste! Itaque reiciendis ullam recusandae expedita adipisci pariatur dolore beatae modi,
+                    impedit perferendis?</p>
+                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident inventore quae, delectus
+                    explicabo quisquam deleniti quos facere, eligendi maiores a, illo aspernatur saepe ea magnam
+                    dignissimos dolore aliquid perspiciatis amet.</p>
+            </div>
+        </div>
+
+        <div class="consumo">
+            <div>
+                <h2>Innovación y tendencias</h2>
+                <hr>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non ex atque repellat qui harum! Repellendus
+                    culpa animi iste! Itaque reiciendis ullam recusandae expedita adipisci pariatur dolore beatae modi,
+                    impedit perferendis?</p>
+
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et voluptate laudantium blanditiis,
+                    molestias repudiandae vero eveniet minus libero veniam in exercitationem ullam, facere labore
+                    assumenda eos deserunt consequuntur laboriosam dolores.</p>
+            </div>
+            <div>
+                <img src="img/tendencia1.jpg" alt="tendencia" class="imagen">
+            </div>
+        </div>
+        <div class="consumo">
+            <div>
+                <img src="img/comunidad1.jpg" alt="comunidades energéticas">
+            </div>
+            <div>
+                <h2>Comunidades energéticas</h2>
+                <hr>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non ex atque repellat qui harum! Repellendus
+                    culpa animi iste! Itaque reiciendis ullam recusandae expedita adipisci pariatur dolore beatae modi,
+                    impedit perferendis?</p>
+
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et voluptate laudantium blanditiis,
+                    molestias repudiandae vero eveniet minus libero veniam in exercitationem ullam, facere labore
+                    assumenda eos deserunt consequuntur laboriosam dolores.</p>
+            </div>
+        </div>
+    </div>
+    <!-- !-- FIN DE CONSUMO, INNOVACION Y TENDENCIAS Y COMUNIDADES ENERGETICAS -->
+
+    <div class="opinion">
+        <h2>Tu opinion cuenta</h2>
+        <p>Formulario o encuesta.</p>
+        <!-- Se agregó imagen -->
+        <img src="img/encuesta1.jpg" alt="encuesta">
+    </div>
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>Sobre Nosotros</h3>
+                <p>
+                    Comprometidos con el futuro del planeta a través de soluciones
+                    solares inteligentes y sostenibles.
+                </p>
+            </div>
+            <div class="footer-section">
+                <h3>Contacto</h3>
+                <p>Email: contacto@Energiarinnovabile..com</p>
+                <p>Tel: +57 320 000 0000</p>
+                <p>Medellín, Colombia</p>
+            </div>
+            <div class="footer-section">
+                <h3>Síguenos</h3>
+                <div class="social-icons">
+                    <a href="#"><img src="icons/facebook.svg" alt="Facebook" /></a>
+                    <a href="#"><img src="icons/instagram.svg" alt="Instagram" /></a>
+                    <a href="#"><img src="icons/linkedin.svg" alt="LinkedIn" /></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Vieta Renovabili. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+
+    <script src="js/validar_botones.js"></script>
+</body>
+
+</html>

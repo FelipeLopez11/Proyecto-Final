@@ -1,0 +1,685 @@
+/* ESTILOS GLOBALES DE LA WEB */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  /* text-align: center; */
+  /* Lo cambie para poder justificar algunos parrafos */
+  align-content: center;
+}
+
+body {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  background-color: #d8d4d5;
+  line-height: 1.8;
+}
+
+html,
+body {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+h1 {
+  color: #333;
+}
+
+p {
+  font-size: 20px;
+}
+
+/* TERMINA LOS ESTILOS GLOBALES */
+
+/* COMIENZAN LOS ESTILOS DE LA BARRA Y EL NAVBAR (BARRA DE NAVEGACIÓN). */
+.header {
+  width: 100%;
+  height: auto;
+  text-align: center;
+  background-color: #9da3a5;
+  margin: 0;
+  padding: 10px;
+  font-weight: bold;
+  color: #fff;
+  font-size: 50px;
+}
+
+.navbar1 {
+  position: fixed;
+  background-color: #9da3a5;
+  top: 0;
+  margin: 0;
+  position: sticky;
+  top: 0px;
+  align-items: center;
+}
+
+.navbar1 ul {
+  top: 0;
+  padding: 10px;
+  list-style: none;
+  text-decoration: none;
+  background-color: #9da3a5;
+  color: #264653;
+  display: flex;
+  justify-content: space-around;
+}
+
+.navbar1 ul li a {
+  padding: 0;
+  text-decoration: none;
+  font-size: 15px;
+  text-decoration: none;
+  color: white;
+  transition: color 0.3s;
+}
+
+.navbar1 ul li a:hover {
+  background-color: #264653;
+  padding: 10px;
+}
+
+.img-header img {
+  width: 100%;
+  height: auto;
+  text-align: center;
+}
+
+
+/* Estilos para la imagen del icono */
+.login_icon {
+  vertical-align: middle;
+  font-size: 34px;
+
+}
+
+
+/* TERMINAN LOS ESTILOS DEL NAVBAR */
+
+/* COMIENZAN LOS ESTILOS DEL HEADER Y MAIN, CON LAS IMÁGENES INCLUIDAS */
+
+
+
+
+.definicion-energias {
+  text-align: center;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4);
+  padding: 10px;
+  margin-bottom: 40px;
+  width: 50%;
+  margin: 20px auto;
+}
+
+.tipos-energias {
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 10px;
+  margin-bottom: 20px;
+  width: 50%;
+  margin: 20px auto;
+  font-size: 25px;
+}
+
+/* Tamaño de titulo h1 definicion-energias y tipos-energias*/
+.definicion-energias {
+  font-size: 30px;
+}
+
+.tipos-energias {
+  font-size: 25px;
+}
+
+/* Fin Tamaño de titulo h1 de definicion-energias y tipos-energias*/
+
+.layout-grid {
+  display: grid;
+  gap: 20px;
+  padding: 20px;
+  grid-template-columns: 1fr;
+  flex: 1;
+
+  /* Se añade para fijar */
+  width: 1200px;
+  margin: 20px auto;
+}
+
+/* Tamaño de letra h3 para energia hidroelectrica, solar y eolica*/
+.layout-grid h3 {
+  font-size: 30px;
+}
+
+/* FIN Tamaño de letra h3 para energia hidroelectrica, solar y eolica*/
+
+.main-content {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.item {
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  /* position: relative; */
+  cursor: pointer;
+  color: #2A2A2A;
+}
+
+.item img {
+  width: 300px;
+  height: auto;
+  border-radius: 50%;
+}
+
+
+.modal {
+  /* Centrar texto del cuadro emergente */
+  text-align: center;
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.8);
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-content {
+  background-color: #fff;
+  margin: auto;
+  padding: 20px;
+  border-radius: 8px;
+  width: 80%;
+  max-width: 600px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.close {
+  color: #aaa;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+}
+
+/* INICIO DE CONSUMO, INNOVACION Y TENDENCIAS Y COMUNIDADES ENERGETICAS */
+
+.consumo {
+  display: grid;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 25px;
+  margin-bottom: 20px;
+  width: 1200px;
+  margin: 20px auto;
+  font-size: 25px;
+  gap: 5px;
+  grid-template-columns: repeat(2, 1fr);
+  flex: 1;
+}
+
+.consumo h2 {
+  font-size: 35px;
+  text-align: center;
+}
+
+.consumo p {
+  text-align: justify;
+}
+
+.consumo img {
+  width: 350px;
+  height: auto;
+  align-content: center;
+}
+
+/* FIN DE CONSUMO, INNOVACION Y TENDENCIAS Y COMUNIDADES ENERGETICAS */
+
+
+.opinion {
+  margin-bottom: 20px;
+  /* Se añaden propiedades a opinion */
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  margin-bottom: 20px;
+  /* Ancho fijo para que no se distribuya contenido */
+  width: 1200px;
+  margin: 20px auto;
+  font-size: 25px;
+}
+
+/* Se agrega estilo a imagen de opinion  */
+
+.opinion img {
+  width: 200px;
+  height: auto;
+}
+
+/* TERMINA LOS ESTILOS DEL HEADER Y NAVBAR */
+
+/* ESTILOS DEL HTML NOSOTROS */
+.nosotros {
+  width: 100%;
+  height: auto;
+  text-align: center;
+  background-color: #d8d4d5;
+  margin: 0;
+  padding: 10px;
+  font-weight: bold;
+  color: #fff;
+  font-size: 40px;
+}
+
+.galeria {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  /* 4 columnas iguales */
+  gap: 1rem;
+  /* separación entre items */
+  width: 100%;
+  max-width: 1200px;
+  /* centrar y limitar ancho */
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+/* 3. Cada item: imagen + pie de foto */
+.galeria-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* 4. Imagenes uniformes y centradas en el rostro */
+.galeria img {
+  width: 100%;
+  aspect-ratio: 3/4;
+  /* relación fija (ajusta a tu gusto) */
+  object-fit: cover;
+  /* recorta sin deformar */
+  object-position: center;
+  /* centra siempre el rostro */
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+/* 5. Pie de foto */
+figcaption {
+  margin-top: 0.5rem;
+  text-align: center;
+  font-weight: bold;
+  color: #333;
+}
+
+/* 6. Efecto mini-zoom */
+.galeria img:hover {
+  transform: scale(1.05);
+}
+
+.galeria img:active {
+  transform: scale(1.1);
+}
+
+/* 7. Responsive: 2 columnas (2 arriba y 2 abajo) */
+@media (max-width: 1024px) {
+  .galeria {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* 8. (Opcional) En móviles muy estrechos, 1 columna */
+@media (max-width: 600px) {
+  .galeria {
+    grid-template-columns: 1fr;
+  }
+}
+
+.nosotros h2,
+p {
+  text-align: center;
+  color: #333;
+}
+
+
+.container-mision {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: flex-start;
+  gap: 30px;
+  max-width: 1200px;
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  margin: 20px auto;
+
+}
+
+.section1,
+.section2 {
+  flex: 1;
+  min-width: 300px;
+  padding: 20px;
+  border-radius: 8px;
+  background-color: #e9f5ee;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.section1 h2,
+.section2 h2 {
+  color: #2e8b57;
+  text-align: center;
+  margin-bottom: 15px;
+  font-size: 30px;
+}
+
+.section1 p,
+.section2 p {
+  color: #333;
+  font-size: 20px;
+  text-align: center;
+  /* Justifica el texto para una apariencia más limpia */
+}
+
+.separador {
+  width: 2px;
+  background-color: #ccc;
+  height: auto;
+  margin: 0 20px;
+  align-self: stretch;
+}
+
+
+
+
+
+/* TERMINA ESTILOS DEL HTML NOSOTROS */
+
+/* COMIENZAN LOS ESTILOS DEL FOOTER */
+
+
+.footer {
+  background-color: #067860;
+  /* azul oscuro ecológico */
+
+  color: #ecf0f1;
+  /* texto claro */
+  padding: 40px 0 20px;
+  font-family: 'Segoe UI', sans-serif;
+
+}
+
+.footer p {
+  color: #fff;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 0 5%;
+}
+
+.footer-section {
+  flex: 1 1 250px;
+  margin: 20px;
+}
+
+.footer-section h3 {
+  margin-bottom: 15px;
+  font-size: 1.3em;
+  color: #f1c40f;
+  /* amarillo solar */
+}
+
+.footer-section p {
+  margin: 5px 0;
+}
+
+.social-icons a img {
+  width: 30px;
+  margin-right: 10px;
+  transition: transform 0.3s;
+}
+
+.social-icons a:hover img {
+  transform: scale(1.2);
+}
+
+.footer-bottom {
+  text-align: center;
+  padding-top: 20px;
+  border-top: 1px solid #7f8c8d;
+  font-size: 0.9em;
+}
+
+
+
+/* TERMINAN LOS ESTILOS DEL FOOTER */
+
+/* ESTILOS DEL LOGIN.HTML */
+.formulario {
+  flex: 1;
+  padding: 20px;
+  max-width: 600px;
+  margin: 20px auto;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgb(0, 0, 0 0.1);
+}
+
+form fieldset {
+  border: 2px solid #ACAD94;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+form legend {
+  font-weight: bold;
+  color: #ACAD94;
+}
+
+label {
+  display: block;
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc !important;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.heading-form {
+  text-align: center;
+}
+
+.boton {
+  background: #3498db;
+  background-image: -webkit-linear-gradient(top, #3498db, #2980b9);
+  background-image: -moz-linear-gradient(top, #3498db, #2980b9);
+  background-image: -ms-linear-gradient(top, #3498db, #2980b9);
+  background-image: -o-linear-gradient(top, #3498db, #2980b9);
+  background-image: linear-gradient(to bottom, #3498db, #2980b9);
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+
+.boton:hover {
+  background: #3cb0fd;
+  background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+  text-decoration: none;
+}
+
+#mensaje {
+  text-align: center;
+  color: red;
+}
+
+.sesion_iniciada_html {
+  text-align: center;
+}
+
+
+/* TERMINA ESTILOS DEL LOGIN.HTML */
+
+.funcionamiento-paneles {
+  text-align: center;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4);
+  padding: 10px;
+  margin-bottom: 40px;
+  width: 70%;
+  margin: 40px auto;
+}
+
+/* !-- ESTILOS DEL FUNCIONAMIENTO.HTML !-- */
+.header-funcionamiento h1 {
+  text-align: center;
+  margin-bottom: 40px;
+
+}
+
+.panel {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 25px;
+  margin-bottom: 20px;
+  width: 800px;
+  margin: 20px auto;
+  flex: 1;
+  text-align: center;
+}
+
+
+
+.panel p {
+  text-align: justify;
+}
+
+.panel img {
+  width: 350px;
+  height: auto;
+  border-radius: 50%;
+}
+
+/* !-- TERMINAN ESTILOS DEL FUNCIONAMIENTO.HTML */
+
+/* -- Estoñps de la visualización de consumos */
+
+.layout-grid-visualizacion {
+  display: flex;
+  flex: 1;
+  padding: 20px;
+}
+
+.main-content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.calculadora {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 600px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+input[type="number"],
+select {
+  padding: 10px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+
+.calcular-btn {
+  text-align: center;
+}
+
+#calcular-btn {
+  background-color: #005299;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+
+}
+
+#calcular-btn:hover {
+  background-color: #013664;
+}
+
+.resultados {
+  width: 100%;
+  max-width: 600px;
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.result-card {
+  background-color: #f9f9f9;
+  padding: 15px;
+  border-radius: 4px;
+  text-align: left;
+}
+
+.hidden {
+  display: none;
+}

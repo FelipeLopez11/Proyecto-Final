@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar sesión</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- HTML DE LA BARRA Y EL NAVBAR -->
+    <header class="header">Energia rinnovabile</header>
+    <nav class="navbar1">
+        <ul>
+            <li><a href="index.html">Energia Rinnovabile</a></li>
+            <li><a href="#">Barra busqueda</a></li>
+            <li><a id="iniciar_sesionBtn" class="iniciar_sesion hidden" href="login.html"><img src="icons/login.png"
+                        class="login_icon" alt="">Iniciar sesión</a></li>
+            <li><a id="cerrar_sesionBtn" class="cerrar_sesion hidden" href="login.html"><img src="icons/logout.png"
+                        class="login_icon" alt="">Cerrar sesión</a></li>
+            <li><a href="ventajas_solar.html">Visualización Consumo</a></li>
+            <li><a href="Funcionamiento.html">Páneles Solares</a></li>
+            <li><a href="nosotros.html">¿Quiénes Somos?</a></li>
+        </ul>
+    </nav>
+
+    <!-- TERMINA EL HTML DE LA BARRA Y EL CSS -->
+
+    <h1 class="heading-form">Inicia sesión para poder visualizar las demás pestañas</h1>
+
+    <form id="sesion" class="formulario">
+        <fieldset>
+            <legend>Iniciar sesión</legend>
+            <label for="username">Usuario:</label>
+            <input type="text" name="username" id="username" required>
+
+            <label for="password">Contraseña:</label>
+            <input type="password" name="password" id="password" required>
+
+            <input type="submit" class="boton">
+        </fieldset>
+        <p id="mensaje"></p>
+    </form>
+
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>Sobre Nosotros</h3>
+                <p>
+                    Comprometidos con el futuro del planeta a través de soluciones
+                    solares inteligentes y sostenibles.
+                </p>
+            </div>
+            <div class="footer-section">
+                <h3>Contacto</h3>
+                <p>Email: contacto@Energiarinnovabile..com</p>
+                <p>Tel: +57 320 000 0000</p>
+                <p>Medellín, Colombia</p>
+            </div>
+            <div class="footer-section">
+                <h3>Síguenos</h3>
+                <div class="social-icons">
+                    <a href="#"><img src="icons/facebook.svg" alt="Facebook" /></a>
+                    <a href="#"><img src="icons/instagram.svg" alt="Instagram" /></a>
+                    <a href="#"><img src="icons/linkedin.svg" alt="LinkedIn" /></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Vieta Renovabili. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="js/validar_botones.js"></script>
+
+</body>
+
+</html>

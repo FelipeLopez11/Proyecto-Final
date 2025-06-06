@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ventajas de los páneles solares</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+
+    <!-- HTML DE LA BARRA Y EL NAVBAR -->
+    <header class="header">Energia rinnovabile</header>
+    <nav class="navbar1">
+        <ul>
+            <li><a href="index.html">Energia Rinnovabile</a></li>
+            <li><a href="#">Barra busqueda</a></li>
+            <li><a id="iniciar_sesionBtn" class="iniciar_sesion hidden" href="login.html"><img src="icons/login.png"
+                        class="login_icon" alt="">Iniciar sesión</a></li>
+            <li><a id="cerrar_sesionBtn" class="cerrar_sesion hidden" href="login.html"><img src="icons/logout.png"
+                        class="login_icon" alt="">Cerrar sesión</a></li>
+            <li><a href="ventajas_solar.html">Visualización Consumo</a></li>
+            <li><a href="Funcionamiento.html">Páneles Solares</a></li>
+            <li><a href="nosotros.html">¿Quiénes Somos?</a></li>
+        </ul>
+    </nav>
+    <!-- TERMINA EL HTML DE LA BARRA Y EL CSS -->
+
+
+    <div class="layout-grid-visualizacion">
+        <main class="main-content">
+
+            <section class="calculadora">
+                <h2>Calcula tu energía</h2>
+                <form id="form_ahorro">
+                    <div class="form-group">
+                        <label for="consumo">Consumo energético actual (kwh): </label>
+                        <input type="number" id="consumo" name="consumo" min="1" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="tipo-energia">Tipo de energía renovable</label>
+                        <select name="tipo-energia" id="tipo-energia" required>
+                            <option value="">Seleccione una opción</option>
+                            <option value="solar">Solar</option>
+                            <option value="eolica">Eólica</option>
+                            <option value="hidrogeno">Hidrógeno verde</option>
+                        </select>
+                    </div>
+                    <div class="calcular-btn">
+                        <button type="button" id="calcular-btn">Calcular ahorro</button>
+                    </div>
+                </form>
+            </section>
+
+
+            <section id="resultados" class="resultados hidden">
+                <h2>Resultados ahorro energético:</h2>
+                <div class="result-card">
+                    <p><strong>Ahorro energético estimado: </strong> <span id="ahorro-kwh">Kwh</span></p>
+                    <p><strong>Reducción en emisiones de CO₂: </strong> <span id="ahorro-co2">Kg</span></p>
+                    <p><strong>Ahorro económico estimiado: </strong> <span id="ahorro-usd">USD</span></p>
+                </div>
+            </section>
+        </main>
+    </div>
+
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>Sobre Nosotros</h3>
+                <p>
+                    Comprometidos con el futuro del planeta a través de soluciones
+                    solares inteligentes y sostenibles.
+                </p>
+            </div>
+            <div class="footer-section">
+                <h3>Contacto</h3>
+                <p>Email: contacto@Energiarinnovabile..com</p>
+                <p>Tel: +57 320 000 0000</p>
+                <p>Medellín, Colombia</p>
+            </div>
+            <div class="footer-section">
+                <h3>Síguenos</h3>
+                <div class="social-icons">
+                    <a href="#"><img src="icons/facebook.svg" alt="Facebook" /></a>
+                    <a href="#"><img src="icons/instagram.svg" alt="Instagram" /></a>
+                    <a href="#"><img src="icons/linkedin.svg" alt="LinkedIn" /></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Vieta Renovabili. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="js/visualizacion.js"></script>
+    <script src="js/validar_sesion.js"></script>
+    <script src="js/validar_botones.js"></script>
+
+</body>
+
+</html>
