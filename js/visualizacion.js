@@ -6,10 +6,9 @@ document.addEventListener('DOMContentLoaded', function () {
     const resultadosSection = document.getElementById('resultados');
     const ahorroKwhSpan = document.getElementById('ahorro-kwh');
     const ahorroCo2Span = document.getElementById('ahorro-co2');
-    const ahorroUsdSpan = document.getElementById('ahorro-usd');
+    const ahorroCopSpan = document.getElementById('ahorro-cop');
 
     calcularBtn.addEventListener('click', function () {
-
         const consumo = parseFloat(consumoInput.value);
         const tipoEnergia = tipoEnergiaSelect.value;
 
@@ -19,28 +18,27 @@ document.addEventListener('DOMContentLoaded', function () {
         }
 
         let factorAhorro;
-
         switch (tipoEnergia) {
             case "solar":
-                factorAhorro = 0.2; //20% de ahorro energético
+                factorAhorro = 0.25;
                 break;
             case "eolica":
-                factorAhorro = 0.25; //25% de ahorro energético
+                factorAhorro = 0.20;
                 break;
             case "hidrogeno":
-                factorAhorro = 0.3; //30% de ahorro energético
+                factorAhorro = 0.10;
                 break;
             default:
                 factorAhorro = 0;
         }
 
         const ahorroEnergetico = consumo * factorAhorro;
-        const reduccionCo2 = ahorroEnergetico * 0.5;
-        const ahorroEconomico = ahorroEnergetico * 0.15;
+        const reduccionCo2 = ahorroEnergetico * 0.18; // kg CO2
+        const ahorroEconomico = ahorroEnergetico * 650; // pesos COP
 
         ahorroKwhSpan.textContent = ahorroEnergetico.toFixed(2);
         ahorroCo2Span.textContent = reduccionCo2.toFixed(2);
-        ahorroUsdSpan.textContent = ahorroEconomico.toFixed(2);
+        ahorroCopSpan.textContent = ahorroEconomico.toLocaleString('es-CO');
 
         resultadosSection.classList.remove("hidden");
     });
