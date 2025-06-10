@@ -1,221 +1,167 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Paneles Solares</title>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Paneles Solares</title>
 
-    <!-- Fuente exclusiva para el header (Iceland) -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Iceland&display=swap"
-      rel="stylesheet"
-    />
+  <!-- Fuentes -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Iceland&display=swap" rel="stylesheet" />
 
-    <!-- Tu CSS principal -->
-    <link rel="stylesheet" href="css/paneles.css" />
-  </head>
+  <!-- Estilos principales -->
+  <link rel="stylesheet" href="css/paneles.css" />
+</head>
 
-  <body>
-    <!-- ▸ BARRA SUPERIOR MODERNA -->
-  <!-- ▸ BARRA SUPERIOR MODERNA -->
-     <header class="navbar">
-      <h1 class="brand">
-        <img src="img/panel-solar.png" alt="Icono panel solar" />
-        Energia rinnovabile
-      </h1>
+<body>
+  <!-- ▸ BARRA SUPERIOR -->
+  <header class="navbar">
+    <h1 class="brand">
+      <img src="img/panel-solar.png" alt="Icono panel solar" />
+      Energia rinnovabile
+    </h1>
 
-      <nav>
-        <ul class="nav-menu">
-          <li><a href="index.html">Inicio</a></li>
-          <li><a href="#">Barra búsqueda</a></li>
-          <li>
-            <a id="iniciar_sesionBtn" href="login.html">Iniciar sesión</a>
-          </li>
-          <li>
-            <a id="cerrar_sesionBtn" class="hidden" href="index.html"
-              >Cerrar sesión</a
-            >
-          </li>
-          <li><a href="ventajas_solar.html">Visualización Consumo</a></li>
-          <!-- Página actual: Páneles Solares -->
-          <li>
-            <a class="active" href="Funcionamiento.html">Páneles Solares</a>
-          </li>
-          <li><a href="nosotros.html">¿Quiénes Somos?</a></li>
-        </ul>
-      </nav>
-    </header>
+    <nav>
+      <ul class="nav-menu">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="#">Barra búsqueda</a></li>
+        <li><a id="iniciar_sesionBtn" href="login.html">Iniciar sesión</a></li>
+        <li><a id="cerrar_sesionBtn" class="hidden" href="index.html">Cerrar sesión</a></li>
+        <li><a href="ventajas_solar.html">Visualización Consumo</a></li>
+        <li><a class="active" href="Funcionamiento.html">Páneles Solares</a></li>
+        <li><a href="nosotros.html">¿Quiénes Somos?</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <main>
-      <!-- =====================================================
-         SECCIÓN 1: HERO PRINCIPAL “Paneles Solares”
+  <main>
+
+    <!-- =====================================================
+         SECCIÓN 1 • HERO
          ===================================================== -->
-      <section id="inicio" class="section1">
-        <div class="contenido">
-          <h1>Paneles Solares</h1>
+    <section id="inicio" class="section1">
+      <h2 class="titulo">Paneles Solares</h2>
+
+      <div class="grid-hero">
+        <div class="texto">
           <p>
-            Los paneles solares son una solución limpia y eficiente para
-            aprovechar la energía del sol y transformarla en electricidad.
-            Gracias a esta tecnología, es posible reducir el consumo de energía
-            convencional, ahorrar en costos y contribuir al cuidado del medio
-            ambiente. En nuestra empresa, impulsamos el uso de energías
-            renovables con el objetivo de ofrecer sistemas de alta calidad y
-            durabilidad.
+            Un sistema fotovoltaico convierte la luz en energía eléctrica de manera silenciosa y sin piezas móviles. Cada metro cuadrado de panel evita al año la emisión de más de 50 kg de CO₂, lo que equivale a plantar dos árboles. Además, los precios de las instalaciones han caído un 80 % en la última década, de modo que el retorno de la inversión suele llegar entre 4 y 6 años, mientras el equipo sigue produciendo durante más de 20.
           </p>
         </div>
-        <img src="img/solar1.jpg" alt="Distribución de paneles solares" />
-      </section>
 
-      <!-- =====================================================
-         SECCIÓN 2: “Información General”
+        <div class="imagen img1">
+          <img src="img/solar1.jpg" alt="Distribución de paneles solares">
+        </div>
+      </div>
+    </section>
+
+    <!-- =====================================================
+         SECCIÓN 2 • ¿QUÉ SON?
          ===================================================== -->
-      <section id="info" class="section2">
-        <!-- Título de sección -->
-        <h2>Información General</h2>
-        <!-- Tarjeta introductoria (primer artículo) -->
-        <article>
-          <div class="texto">
-            <h3>¿Qué son?</h3>
-            <p>
-              Los paneles solares convierten la luz del sol en electricidad
-              usando células de silicio. Esa electricidad se usa en la casa o se
-              envía a la red eléctrica, reduciendo costos y ayudando al medio
-              ambiente.
-            </p>
-          </div>
-          <img src="img/queson.jpg" alt="Qué son los paneles solares" />
-        </article>
+    <section id="info" class="section2">
+      <h2 class="titulo">¿Qué Son?</h2>
 
-        <!-- Tarjeta 2: Ventajas -->
-        <article>
+      <!-- Intro rápida -->
+      <div class="intro-grid">
+        <div class="intro-text">
+          <p>
+            Las células de silicio generan corriente continua cuando los fotones liberan electrones en el material semiconductor. Un inversor la transforma en corriente alterna para alimentar los electrodomésticos o volcarla a la red. Al estar modulados en filas independientes, los paneles siguen funcionando incluso si una parte queda sombreada, aumentando la confiabilidad del sistema.
+          </p>
+        </div>
+        <div class="intro-img">
+          <img src="img/queson.jpg" alt="¿Qué son los paneles solares?">
+        </div>
+      </div>
+
+      <!-- Tarjetas principales -->
+      <div class="cards">
+        <div class="card">
           <h3>Ventajas</h3>
           <ul>
             <li>Ahorro en la factura de luz.</li>
-            <li>Energía limpia sin contaminar.</li>
-            <li>Vida útil larga (20–25 años).</li>
-            <li>Subvenciones o incentivos disponibles.</li>
+            <li>Energía limpia y sin emisiones.</li>
+            <li>Vida útil de 20-25 años.</li>
+            <li>Subvenciones e incentivos.</li>
           </ul>
-          <img src="img/solar2.jpg" alt="Ventajas de los paneles solares" />
-        </article>
+          <img src="img/solar2.jpg" alt="Ventajas de los paneles solares">
+        </div>
 
-        <!-- Tarjeta 3: Tipos de paneles -->
-        <article>
-          <h3>Tipos de paneles</h3>
+        <div class="card">
+          <h3>Tipos de Paneles</h3>
           <ul>
-            <li>
-              <strong>Monocristalinos:</strong> Alta eficiencia y color oscuro.
-            </li>
-            <li>
-              <strong>Policristalinos:</strong> Eficiencia media y precio más
-              bajo.
-            </li>
-            <li>
-              <strong>Capa fina:</strong> Menor eficiencia, pero más ligeros.
-            </li>
+            <li><strong>Monocristalinos:</strong> Alta eficiencia.</li>
+            <li><strong>Policristalinos:</strong> Precio moderado.</li>
+            <li><strong>Capa fina:</strong> Flexibles y ligeros.</li>
           </ul>
-          <img src="img/types1.jpg" alt="Tipos de paneles solares" />
-        </article>
-      </section>
+          <img src="img/types1.jpg" alt="Tipos de paneles solares">
+        </div>
 
-      <!-- =====================================================
-         SECCIÓN 3: “Mantenimiento y Buenas Prácticas”
-         ===================================================== -->
-      <section id="mantenimiento" class="section3">
-        <!-- Título de sección -->
-        <h2>Mantenimiento y Buenas Prácticas</h2>
-        <!-- Artículo introductorio -->
-        <article>
-          <div class="texto">
-            <p>
-              Mantener los paneles solares en buen estado es clave para su
-              rendimiento. Aquí te damos consejos simples para cuidarlos y
-              prolongar su vida útil.
-            </p>
-          </div>
-          <img
-            src="img/solar0.jpg"
-            alt="Buenas prácticas de mantenimiento de paneles solares"
-          />
-        </article>
+        <div class="card">
+          <h3>Mantenimiento Básico</h3>
+          <ul>
+            <li>Limpieza cada 6 meses.</li>
+            <li>Inspección visual periódica.</li>
+            <li>Revisión eléctrica anual.</li>
+          </ul>
+          <img src="img/inclinacion1.jpg" alt="Mantenimiento de paneles">
+        </div>
+      </div>
+    </section>
 
-        <!-- Tarjeta: Limpieza -->
-        <article>
+    <!--SECCIÓN 3 • MANTENIMIENTO-->
+    <section id="mantenimiento" class="section3">
+      <h2 class="titulo">Mantenimiento y Buenas Prácticas</h2>
+
+      <!-- Intro -->
+      <div class="intro-grid">
+        <div class="intro-text">
+          <p>
+            Un mantenimiento puede adecuado incrementar la producción anual hasta un 12 %. Las revisiones periódicas detectan microfisuras y conexiones sueltas antes de que se traduzcan en pérdidas de rendimiento. Llevar un registro digital de limpiezas, inspecciones y mediciones facilita la garantía y aumenta el valor de reventa de la instalación.
+          </p>
+        </div>
+        <div class="intro-img img1">
+          <img src="img/solar0.jpg" alt="Buenas prácticas">
+        </div>
+      </div>
+
+      <!-- Cuidados -->
+      <div class="tips">
+        <div class="tip">
           <h3>Limpieza</h3>
-          <p>
-            Limpiar los paneles cada 6 meses con agua y jabón suave. Usar un
-            paño o cepillo suave y hacerlo cuando estén fríos.
-          </p>
-          <img src="img/limpiesa1.jpg" alt="Limpieza de paneles solares" />
-        </article>
+          <p>Límpialos con agua y jabón suave cuando estén fríos.</p>
+          <img src="img/limpiesa1.jpg" alt="Limpieza">
+        </div>
 
-        <!-- Tarjeta: Inspección Visual -->
-        <article>
+        <div class="tip">
           <h3>Inspección Visual</h3>
-          <p>
-            Revisar si hay grietas, polvo o sombras nuevas (árboles, objetos)
-            que bloqueen el sol.
-          </p>
-          <img
-            src="img/inspeccion1.jpg"
-            alt="Inspección visual de paneles solares"
-          />
-        </article>
+          <p>Busca grietas, polvo o sombras que tapen la luz.</p>
+          <img src="img/inspeccion1.jpg" alt="Inspección visual">
+        </div>
 
-        <!-- Tarjeta: Revisión Eléctrica -->
-        <article>
+        <div class="tip">
           <h3>Revisión Eléctrica</h3>
-          <p>
-            Comprobar que el inversor muestra valores normales y que la
-            producción coincide con lo esperado.
-          </p>
-          <img
-            src="img/revision1.jpg"
-            alt="Revisión eléctrica de paneles solares"
-          />
-        </article>
+          <p>Comprueba el inversor y la producción esperada.</p>
+          <img src="img/revision1.jpg" alt="Revisión eléctrica">
+        </div>
 
-        <!-- Tarjeta: Seguridad -->
-        <article>
+        <div class="tip">
           <h3>Seguridad</h3>
           <ul>
-            <li>Usar guantes y gafas al manipular el sistema.</li>
-            <li>Apagar el interruptor general antes de revisar.</li>
-            <li>No pisar los paneles ni exponerlos a golpes fuertes.</li>
+            <li>Guantes y gafas al manipular.</li>
+            <li>Interruptor general apagado.</li>
+            <li>No pisar los paneles.</li>
           </ul>
-          <img
-            src="img/seguridad1.png"
-            alt="Técnico ajustando un panel solar con guantes de seguridad"
-          />
-        </article>
+          <img src="img/seguridad1.png" alt="Seguridad">
+        </div>
+      </div>
+    </section>
+  </main>
 
-        <!-- Tarjeta: Consejos adicionales -->
-        <article>
-          <h3>Consejos adicionales</h3>
-          <ul>
-            <li>Revisar la inclinación para capturar más sol según tu zona.</li>
-            <li>
-              Llevar un registro de cada limpieza e inspección (fecha y
-              observaciones).
-            </li>
-            <li>
-              Contratar a un técnico cada 2–3 años para revisión profesional de
-              conexiones y diodos.
-            </li>
-          </ul>
-          <img
-            src="img/inclinacion1.jpg"
-            alt="Técnicos revisando inclinación de paneles solares"
-          />
-        </article>
-      </section>
-    </main>
-
-    <!-- PIE DE PÁGINA -->
-    <footer class="footer">
-      <p>Creado por Grupo Vieta renovabili</p>
-      <p>© Todos los derechos reservados – 2025</p>
-    </footer>
-  </body>
+  <!-- PIE DE PÁGINA -->
+  <footer class="footer">
+    <p>Creado por Grupo Vieta renovabili</p>
+    <p>© Todos los derechos reservados – 2025</p>
+  </footer>
+</body>
 </html>
