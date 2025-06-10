@@ -20,25 +20,23 @@
 
         <nav>
             <ul class="nav-menu">
-                <li><a class="active" href="index.html">Inicio</a></li>
+                <li><a href="index.html">Inicio</a></li>
                 <li><a href="#">Barra búsqueda</a></li>
-                <li>
-                    <a class="active hidden" id="iniciar_sesionBtn" href="login.html">Iniciar sesión</a>
-                </li>
-                <li>
-                    <a id="cerrar_sesionBtn" class="active hidden" href="index.html">Cerrar sesión</a>
-                </li>
-                <li><a class="active" href="ventajas_solar.html">Visualización Consumo</a></li>
+
+                <li><a href="ventajas_solar.html">Visualización Consumo</a></li>
                 <!-- Página actual: Páneles Solares -->
                 <li>
-                    <a class="active" href="Funcionamiento.html">Páneles Solares</a>
+                    <a href="Funcionamiento.html">Páneles Solares</a>
                 </li>
-                <li><a class="active" href="nosotros.html">¿Quiénes Somos?</a></li>
+                <li><a href="nosotros.html">¿Quiénes Somos?</a></li>
+                <li id="sesion_container">
+                    <!-- Se rellenará dinámicamente -->
+                </li>
             </ul>
         </nav>
     </header>
 
-        <img class="contenido-img" src="img/energia-que.jpg" alt="">
+    <img class="contenido-img" src="img/energia-que.jpg" alt="">
     <!-- TERMINA EL HTML DE LA BARRA Y EL CSS -->
 
     <!-- COMIENZA HTML DE HEADER Y MAIN -->
@@ -135,12 +133,12 @@
             <div>
                 <h2>El consumo de energía</h2>
                 <hr>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non ex atque repellat qui harum! Repellendus
-                    culpa animi iste! Itaque reiciendis ullam recusandae expedita adipisci pariatur dolore beatae modi,
-                    impedit perferendis?</p>
-                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident inventore quae, delectus
-                    explicabo quisquam deleniti quos facere, eligendi maiores a, illo aspernatur saepe ea magnam
-                    dignissimos dolore aliquid perspiciatis amet.</p>
+                <p>En las últimas décadas, el consumo energético mundial ha aumentado de forma exponencial, impulsado
+                    por el desarrollo tecnológico y el crecimiento poblacional. Este incremento ha generado una mayor
+                    presión sobre los recursos no renovables, como el petróleo y el gas natural. Por ello, se hace cada
+                    vez más necesario adoptar fuentes de energía más limpias y sostenibles. El uso eficiente de la
+                    energía, junto con la transición hacia energías renovables, es clave para reducir la huella de
+                    carbono y mitigar los efectos del cambio climático.</p>
             </div>
         </div>
 
@@ -148,13 +146,12 @@
             <div>
                 <h2>Innovación y tendencias</h2>
                 <hr>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non ex atque repellat qui harum! Repellendus
-                    culpa animi iste! Itaque reiciendis ullam recusandae expedita adipisci pariatur dolore beatae modi,
-                    impedit perferendis?</p>
-
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et voluptate laudantium blanditiis,
-                    molestias repudiandae vero eveniet minus libero veniam in exercitationem ullam, facere labore
-                    assumenda eos deserunt consequuntur laboriosam dolores.</p>
+                <p>La innovación en el sector energético está transformando la forma en que generamos, almacenamos y
+                    consumimos electricidad. Tecnologías como los paneles solares de alta eficiencia, las turbinas
+                    eólicas inteligentes y los sistemas de almacenamiento con baterías de litio están marcando
+                    tendencia. Además, el uso de inteligencia artificial y redes inteligentes (smart grids) permite una
+                    gestión más precisa y equilibrada del suministro energético. Estas tendencias apuntan a un futuro
+                    más sostenible, donde las energías limpias sean accesibles para todos.</p>
             </div>
             <div>
                 <img src="img/tendencia1.jpg" alt="tendencia" class="imagen">
@@ -167,13 +164,12 @@
             <div>
                 <h2>Comunidades energéticas</h2>
                 <hr>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non ex atque repellat qui harum! Repellendus
-                    culpa animi iste! Itaque reiciendis ullam recusandae expedita adipisci pariatur dolore beatae modi,
-                    impedit perferendis?</p>
-
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et voluptate laudantium blanditiis,
-                    molestias repudiandae vero eveniet minus libero veniam in exercitationem ullam, facere labore
-                    assumenda eos deserunt consequuntur laboriosam dolores.</p>
+                <p>Las comunidades energéticas representan un modelo emergente basado en la cooperación local para la
+                    producción y consumo de energía renovable. Estas comunidades permiten a los ciudadanos generar su
+                    propia electricidad, principalmente mediante paneles solares, y compartir el excedente con sus
+                    vecinos. Este enfoque fomenta la independencia energética, reduce costos y promueve una mayor
+                    conciencia ambiental. Además, fortalece los lazos sociales y contribuye a una economía más circular
+                    y resiliente frente a crisis energéticas.</p>
             </div>
         </div>
     </div>
@@ -185,6 +181,7 @@
         <!-- Se agregó imagen -->
         <img src="img/encuesta1.jpg" alt="encuesta">
     </div>
+
     <footer class="footer">
         <div class="footer-container">
             <div class="footer-section">
@@ -216,6 +213,7 @@
 
 
     <script src="js/validar_botones.js"></script>
+    <script src="js/validar_sesion.js"></script>
 </body>
 
 </html>

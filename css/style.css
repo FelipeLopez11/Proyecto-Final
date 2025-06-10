@@ -21,7 +21,7 @@ body {
   height: 100%;
   display: flex;
   flex-direction: column;
-} 
+}
 
 h1 {
   color: #333;
@@ -44,13 +44,16 @@ p {
   justify-content: space-between;
   align-items: center;
 
-  min-height: 50px; /* ⇪ grosor vertical */
+  min-height: 50px;
+  /* ⇪ grosor vertical */
   text-align: center;
   padding: 0 2.5rem;
 
   /* Fondo semitransparente en escala de grises + difuminado */
-  background: rgba(12, 208, 32, 0.599); /* gris 65 % opacidad   */
-  backdrop-filter: blur(8px); /* efecto ‘vidrio esmerilado’ */
+  background: rgba(12, 208, 32, 0.599);
+  /* gris 65 % opacidad   */
+  backdrop-filter: blur(8px);
+  /* efecto ‘vidrio esmerilado’ */
 
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
@@ -58,7 +61,8 @@ p {
 /* 2. LOGO / TÍTULO ────────────────────────────────────────────── */
 .brand {
   margin: 0;
-  font-family: "Iceland", futurista; /* Tipografia futurista llamativa */
+  font-family: "Iceland", futurista;
+  /* Tipografia futurista llamativa */
   font-weight: 500;
   font-size: 2.2rem;
   color: #010101;
@@ -69,6 +73,7 @@ p {
   align-items: center;
   gap: 0.4rem;
 }
+
 .brand img {
   width: 48px;
   height: 48px;
@@ -79,7 +84,8 @@ p {
 .nav-menu {
   list-style: none;
   display: flex;
-  gap: 2.5rem; /* Espacio uniforme entre enlaces */
+  gap: 2.5rem;
+  /* Espacio uniforme entre enlaces */
   margin: 0;
   padding: 0;
 }
@@ -99,17 +105,21 @@ p {
   content: "";
   position: absolute;
   left: 0;
-  bottom: -8px; /* un poco más abajo porque la barra es más alta */
+  bottom: -8px;
+  /* un poco más abajo porque la barra es más alta */
   width: 100%;
   height: 2px;
-  background: #f2ff00; /* turquesa brillante; cambia si quieres */
+  background: #f2ff00;
+  /* turquesa brillante; cambia si quieres */
   transform: scaleX(0);
   transform-origin: center;
   transition: transform 0.3s ease;
 }
+
 .nav-menu a:hover {
   opacity: 1;
 }
+
 .nav-menu a:hover::after {
   transform: scaleX(1);
 }
@@ -119,9 +129,11 @@ p {
 .nav-menu a.active:hover {
   opacity: 1;
 }
+
 .nav-menu a.active::after {
   transform: scaleX(1);
-  background: #fff; /* Línea blanca para la página actual */
+  background: #fff;
+  /* Línea blanca para la página actual */
 }
 
 /* 4. Responsive simple (≤ 720 px) ─────────────────────────────── */
@@ -130,13 +142,14 @@ p {
     height: 72px;
     padding: 0 1rem;
   }
+
   .nav-menu {
     gap: 1rem;
     font-size: 0.9rem;
   }
 }
 
-.contenido-img{
+.contenido-img {
   width: 100%;
 }
 
@@ -227,17 +240,15 @@ p {
 
 
 .modal {
-  /* Centrar texto del cuadro emergente */
-  text-align: center;
   display: none;
   position: fixed;
-  z-index: 1000;
+  z-index: 2;
   left: 0;
   top: 0;
   width: 100%;
   height: 100%;
   overflow: auto;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.7);
   align-items: center;
   justify-content: center;
 }
@@ -459,9 +470,6 @@ p {
   margin: 0 20px;
   align-self: stretch;
 }
-
-
-
 
 
 /* TERMINA ESTILOS DEL HTML NOSOTROS */
@@ -732,8 +740,4 @@ select {
   padding: 15px;
   border-radius: 4px;
   text-align: left;
-}
-
-.hidden {
-  display: none;
 }

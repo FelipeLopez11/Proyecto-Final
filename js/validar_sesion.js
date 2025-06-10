@@ -1,27 +1,31 @@
-document.addEventListener('DOMContentLoaded', () => {
-    const cerrar_sesionBtn = document.getElementById('cerrar_sesionBtn');
+// validar_sesion.js
 
-    
+document.addEventListener('DOMContentLoaded', () => {
     const loginStatus = localStorage.getItem('logStatus');
 
-    if (loginStatus !== 'true') {
-        
-        if (cerrar_sesionBtn) {
-            cerrar_sesionBtn.classList.add('hidden');
-        }
+    // Lista de rutas protegidas
+    const paginasProtegidas = [
+        'ventajas_solar.html',
+        'Funcionamiento.html',
+        'nosotros.html'
+    ];
+
+    const estaProtegida = paginasProtegidas.some(pagina =>
+        location.pathname.endsWith(pagina)
+    );
+
+    if (estaProtegida && loginStatus !== 'true') {
         alert("Debes iniciar sesión para ver esta página.");
-        window.location.href = 'login.html'; 
-        return; 
-    } else {
-        if (cerrar_sesionBtn) {
-            cerrar_sesionBtn.classList.remove('hidden');
-        }
+        window.location.href = 'login.html';
     }
 
-    if (cerrar_sesionBtn) {
-        cerrar_sesionBtn.addEventListener('click', () => {
-            localStorage.removeItem('logStatus'); 
-            window.location.href = 'index.html'; 
-        });
-    }
+
 });
+
+function openModal(modalId) {
+    document.getElementById(modalId).style.display = 'flex';
+}
+
+function closeModal(modalId) {
+    document.getElementById(modalId).style.display = 'none';
+}
