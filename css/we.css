@@ -1,0 +1,73 @@
+.galeria-item img{
+    display: block;
+    justify-content: center;
+    margin: 0 auto;
+    width: 500px;
+}
+.galeriaNosotros{
+     display: flex;
+  justify-content: center;  /* centra horizontalmente todos los items */
+  gap: 20px; 
+}
+.nosotros-section {
+  background: #e8f7e9;            /* fondo verde claro igual al de Misión/Visión */
+  padding: 70px 20px;            /* más espacio interno */
+  text-align: center;            /* centra todo el contenido */
+}
+
+.nosotros-section h2 {
+  font-size: 3rem;               /* título muy grande */
+  color: #096f60;                /* verde oscuro */
+  margin-bottom: 30px;           /* espacio debajo */
+}
+.we h1{
+    
+  font-size: 6rem;               /* título muy grande */
+  color: #096f60;                /* verde oscuro */
+  margin-bottom: 30px;           /* espacio debajo */
+}
+
+.nosotros-section .intro {
+  font-size: 1.3rem;             /* párrafo más grande */
+  line-height: 1.8;              /* líneas más separadas */
+  margin-bottom: 50px;           /* espacio antes de valores */
+}
+
+.nosotros-section .valores {
+  display: flex;                 /* fila de bloques */
+  justify-content: center;       /* centra los bloques */
+  gap: 25px;                     /* más separación */
+  flex-wrap: wrap;               /* envuelve en móvil */
+  margin-bottom: 50px;           /* espacio antes del botón */
+}
+
+.nosotros-section .valor {
+  background: #e8f7e9;            /* mismo fondo verde */
+  padding: 25px;                  /* más espacio interno */
+  border-radius: 8px;             /* esquinas redondeadas */
+  width: 260px;                   /* bloque un poco más ancho */
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.nosotros-section .valor h3 {
+  font-size: 1.5rem;             /* subtítulos más grandes */
+  margin-bottom: 15px;           /* espacio bajo subtítulo */
+}
+
+.nosotros-section .valor p {
+  font-size: 1rem;               /* texto descriptivo más grande */
+  color: #555;                   
+}
+
+.nosotros-section .btn-accion {
+  display: inline-block;         
+  font-size: 1.2rem;             /* texto del botón más grande */
+  padding: 14px 36px;            /* botón más ancho y alto */
+  background: #096f60;           
+  color: #fff;                   
+  border-radius: 4px;            
+}
+
+.nosotros-section .btn-accion:hover {
+  background: #075e52;           /* hover ligeramente más oscuro */
+}

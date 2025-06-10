@@ -1,0 +1,80 @@
+.energia {
+  background: #f5f5f5;           /* fondo gris claro */
+  padding: 60px 20px;            /* espacio interior */
+}
+
+.energia-content {
+  display: flex;                 /* ubica imagen y texto en fila */
+  flex-wrap: wrap;               /* permite salto en pantallas pequeñas */
+  align-items: center;           /* centra verticalmente */
+  justify-content: center;       /* centra horizontalmente */
+  gap: 40px;                     /* separación entre imagen y texto */
+  max-width: 1200px;             /* ancho máximo del contenido */
+  margin: 0 auto;                /* centra el bloque en la página */
+}
+
+.energia-img {
+  flex: 1 1 400px;               /* ocupa espacio según disponible */
+  max-width: 100%;               /* no se sale de su contenedor */
+  border-radius: 8px;            /* esquinas redondeadas */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* sombra suave */
+}
+
+.hero-text {
+  flex: 1 1 400px;               /* ocupa espacio según disponible */
+  text-align: left;              /* texto alineado a la izquierda */
+}
+
+.energia-text h2 {
+  font-size: 2.5rem;             /* tamaño grande para título */
+  color: #096f60;                /* color verde oscuro */
+  margin-bottom: 16px;           /* espacio debajo del título */
+}
+
+.energia-text p {
+  font-size: 1.125rem;           /* texto legible */
+  line-height: 1.6;              /* separación de líneas */
+  color: #333;                   /* gris oscuro para legibilidad */
+  margin-bottom: 24px;           /* espacio antes del botón */
+}
+
+.btn-energia {
+  display: inline-block;         /* se ve como botón */
+  background: #096f60;           /* verde oscuro */
+  color: #fff;                   /* texto blanco */
+  padding: 12px 28px;            /* espacio interno */
+  text-decoration: none;         /* sin subrayado */
+  border-radius: 4px;            /* esquinas redondeadas */
+  font-size: 1rem;               /* tamaño de texto */
+}
+
+.btn-energia:hover {
+  background: #075e52;           /* verde más oscuro al pasar ratón */
+}
+
+/* ====== SECCIÓN DEFINICIÓN DE ENERGÍAS*/
+.definicion-energias {
+  background: #ffffff;           /* fondo blanco limpio */
+  padding: 50px 20px;            /* espacio interior */
+  text-align: center;            /* todo centrado */
+}
+
+.definicion-energias h1 {
+  font-size: 2.8rem;             /* título muy visible */
+  color: #096f60;                /* verde oscuro */
+  margin-bottom: 20px;           /* espacio debajo del título */
+}
+
+.definicion-energias h2 {
+  font-size: 2.8rem;             /* título muy visible */
+  color: #096f60;                /* verde oscuro */
+  margin-bottom: 20px;           /* espacio debajo del título */
+}
+
+.definicion-energias p {
+  font-size: 1.125rem;           /* párrafo legible */
+  line-height: 1.7;              /* separación de líneas */
+  color: #555;                   /* gris medio */
+  max-width: 800px;              /* ancho máximo del texto */
+  margin: 0 auto;                /* centra el párrafo */
+}

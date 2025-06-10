@@ -162,6 +162,38 @@ img { max-width: 100%; display: block; border-radius: 4px; }
 
 }
 
+.st  {
+  background: #ffffff;           /* fondo blanco limpio */
+  padding: 50px 20px;            /* espacio interior */
+  text-align: center;            /* todo centrado */
+}
+
+.st h1 {
+  font-size: 2.8rem;             /* título muy visible */
+  color: #096f60;                /* verde oscuro */
+  margin-bottom: 20px;           /* espacio debajo del título */
+}
+
+.st h2 {
+  font-size: 2.8rem;             /* título muy visible */
+  color: #096f60;                /* verde oscuro */
+  margin-bottom: 20px;           /* espacio debajo del título */
+}
+.st h2 {
+  font-size: 2.8rem;             /* título muy visible */
+  color: #096f60;                /* verde oscuro */
+  margin-bottom: 20px;           /* espacio debajo del título */
+}
+
+.st p {
+  font-size: 1.125rem;           /* párrafo legible */
+  line-height: 1.7;              /* separación de líneas */
+  color: #555;                   /* gris medio */
+  max-width: 800px;              /* ancho máximo del texto */
+  margin: 0 auto;                /* centra el párrafo */
+}
+
+
 /* ─── TITULOS DE SECCIÓN ───────────────────────────────────── */
 .titulo { text-align: center; font-size: 2rem; margin-bottom: 2rem; }
 
@@ -180,7 +212,7 @@ img { max-width: 100%; display: block; border-radius: 4px; }
 .texto  { grid-area: texto; }
 .imagen { grid-area: imagen; }
 
-/* ─── SECCIÓN 2 • ¿QUÉ SON? ────────────────────────────────── */
+/* SECCIÓN 2 • ¿QUÉ SON? */
 .section2 { width: 100%; max-width: 1200px; margin: auto; padding: 3rem 1rem; }
 
 .section2 .intro-grid {
