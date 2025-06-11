@@ -1,80 +1,292 @@
+.definicion-energias {
+  text-align: center;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4);
+  padding: 10px;
+  margin-bottom: 40px;
+  width: 50%;
+  margin: 20px auto;
+}
+
+.tipos-energias {
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 10px;
+  margin-bottom: 20px;
+  width: 50%;
+  margin: 20px auto;
+  font-size: 25px;
+}
+
+/* Tamaño de titulo h1 definicion-energias y tipos-energias*/
+.definicion-energias {
+  font-size: 30px;
+}
+
+.tipos-energias {
+  font-size: 25px;
+}
+
+/* Fin Tamaño de titulo h1 de definicion-energias y tipos-energias*/
+
+.layout-grid-modal {
+  display: grid;
+  gap: 20px;
+  padding: 20px;
+  grid-template-columns: 1fr;
+  flex: 1;
+
+  /* Se añade para fijar */
+  width: 1200px;
+  margin: 20px auto;
+}
+
+/* Tamaño de letra h3 para energia hidroelectrica, solar y eolica*/
+.layout-grid-modal h3 {
+  font-size: 30px;
+}
+
+/* FIN Tamaño de letra h3 para energia hidroelectrica, solar y eolica*/
+
+.main-content-modal {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.item {
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  /* position: relative; */
+  cursor: pointer;
+  color: #2A2A2A;
+}
+
+.item img {
+  width: 300px;
+  height: auto;
+  border-radius: 50%;
+}
+
+
+.modal {
+  /* Centrar texto del cuadro emergente */
+  text-align: center;
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.8);
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-content {
+  background-color: #fff;
+  margin: auto;
+  padding: 20px;
+  border-radius: 8px;
+  width: 80%;
+  max-width: 600px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.close {
+  color: #aaa;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+}
+
+/* INICIO DE CONSUMO, INNOVACION Y TENDENCIAS Y COMUNIDADES ENERGETICAS */
+
+.consumo {
+  display: grid;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 25px;
+  margin-bottom: 20px;
+  width: 1200px;
+  margin: 20px auto;
+  font-size: 25px;
+  gap: 5px;
+  grid-template-columns: repeat(2, 1fr);
+  flex: 1;
+}
+
+.consumo h2 {
+  font-size: 35px;
+  text-align: center;
+}
+
+.consumo p {
+  text-align: justify;
+}
+
+.consumo img {
+  width: 350px;
+  height: auto;
+  align-content: center;
+}
+
+/* FIN DE CONSUMO, INNOVACION Y TENDENCIAS Y COMUNIDADES ENERGETICAS */
+
+
+.opinion {
+  margin-bottom: 20px;
+  /* Se añaden propiedades a opinion */
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  margin-bottom: 20px;
+  /* Ancho fijo para que no se distribuya contenido */
+  width: 1200px;
+  margin: 20px auto;
+  font-size: 25px;
+}
+
+/* Se agrega estilo a imagen de opinion  */
+
+.opinion img {
+  width: 200px;
+  height: auto;
+}
+
+
 .energia {
-  background: #f5f5f5;           /* fondo gris claro */
-  padding: 60px 20px;            /* espacio interior */
+  background: #f5f5f5;
+  /* fondo gris claro */
+  padding: 60px 20px;
+  /* espacio interior */
 }
 
 .energia-content {
-  display: flex;                 /* ubica imagen y texto en fila */
-  flex-wrap: wrap;               /* permite salto en pantallas pequeñas */
-  align-items: center;           /* centra verticalmente */
-  justify-content: center;       /* centra horizontalmente */
-  gap: 40px;                     /* separación entre imagen y texto */
-  max-width: 1200px;             /* ancho máximo del contenido */
-  margin: 0 auto;                /* centra el bloque en la página */
+  display: flex;
+  /* ubica imagen y texto en fila */
+  flex-wrap: wrap;
+  /* permite salto en pantallas pequeñas */
+  align-items: center;
+  /* centra verticalmente */
+  justify-content: center;
+  /* centra horizontalmente */
+  gap: 40px;
+  /* separación entre imagen y texto */
+  max-width: 1200px;
+  /* ancho máximo del contenido */
+  margin: 0 auto;
+  /* centra el bloque en la página */
 }
 
 .energia-img {
-  flex: 1 1 400px;               /* ocupa espacio según disponible */
-  max-width: 100%;               /* no se sale de su contenedor */
-  border-radius: 8px;            /* esquinas redondeadas */
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* sombra suave */
+  flex: 1 1 400px;
+  /* ocupa espacio según disponible */
+  max-width: 100%;
+  /* no se sale de su contenedor */
+  border-radius: 8px;
+  /* esquinas redondeadas */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  /* sombra suave */
 }
 
 .hero-text {
-  flex: 1 1 400px;               /* ocupa espacio según disponible */
-  text-align: left;              /* texto alineado a la izquierda */
+  flex: 1 1 400px;
+  /* ocupa espacio según disponible */
+  text-align: left;
+  /* texto alineado a la izquierda */
 }
 
 .energia-text h2 {
-  font-size: 2.5rem;             /* tamaño grande para título */
-  color: #096f60;                /* color verde oscuro */
-  margin-bottom: 16px;           /* espacio debajo del título */
+  font-size: 2.5rem;
+  /* tamaño grande para título */
+  color: #096f60;
+  /* color verde oscuro */
+  margin-bottom: 16px;
+  /* espacio debajo del título */
 }
 
 .energia-text p {
-  font-size: 1.125rem;           /* texto legible */
-  line-height: 1.6;              /* separación de líneas */
-  color: #333;                   /* gris oscuro para legibilidad */
-  margin-bottom: 24px;           /* espacio antes del botón */
+  font-size: 1.125rem;
+  /* texto legible */
+  line-height: 1.6;
+  /* separación de líneas */
+  color: #333;
+  /* gris oscuro para legibilidad */
+  margin-bottom: 24px;
+  /* espacio antes del botón */
 }
 
 .btn-energia {
-  display: inline-block;         /* se ve como botón */
-  background: #096f60;           /* verde oscuro */
-  color: #fff;                   /* texto blanco */
-  padding: 12px 28px;            /* espacio interno */
-  text-decoration: none;         /* sin subrayado */
-  border-radius: 4px;            /* esquinas redondeadas */
-  font-size: 1rem;               /* tamaño de texto */
+  display: inline-block;
+  /* se ve como botón */
+  background: #096f60;
+  /* verde oscuro */
+  color: #fff;
+  /* texto blanco */
+  padding: 12px 28px;
+  /* espacio interno */
+  text-decoration: none;
+  /* sin subrayado */
+  border-radius: 4px;
+  /* esquinas redondeadas */
+  font-size: 1rem;
+  /* tamaño de texto */
 }
 
 .btn-energia:hover {
-  background: #075e52;           /* verde más oscuro al pasar ratón */
+  background: #075e52;
+  /* verde más oscuro al pasar ratón */
 }
 
 /* ====== SECCIÓN DEFINICIÓN DE ENERGÍAS*/
 .definicion-energias {
-  background: #ffffff;           /* fondo blanco limpio */
-  padding: 50px 20px;            /* espacio interior */
-  text-align: center;            /* todo centrado */
+  background: #ffffff;
+  /* fondo blanco limpio */
+  padding: 50px 20px;
+  /* espacio interior */
+  text-align: center;
+  /* todo centrado */
 }
 
 .definicion-energias h1 {
-  font-size: 2.8rem;             /* título muy visible */
-  color: #096f60;                /* verde oscuro */
-  margin-bottom: 20px;           /* espacio debajo del título */
+  font-size: 2.8rem;
+  /* título muy visible */
+  color: #096f60;
+  /* verde oscuro */
+  margin-bottom: 20px;
+  /* espacio debajo del título */
 }
 
 .definicion-energias h2 {
-  font-size: 2.8rem;             /* título muy visible */
-  color: #096f60;                /* verde oscuro */
-  margin-bottom: 20px;           /* espacio debajo del título */
+  font-size: 2.8rem;
+  /* título muy visible */
+  color: #096f60;
+  /* verde oscuro */
+  margin-bottom: 20px;
+  /* espacio debajo del título */
 }
 
 .definicion-energias p {
-  font-size: 1.125rem;           /* párrafo legible */
-  line-height: 1.7;              /* separación de líneas */
-  color: #555;                   /* gris medio */
-  max-width: 800px;              /* ancho máximo del texto */
-  margin: 0 auto;                /* centra el párrafo */
+  font-size: 1.125rem;
+  /* párrafo legible */
+  line-height: 1.7;
+  /* separación de líneas */
+  color: #555;
+  /* gris medio */
+  max-width: 800px;
+  /* ancho máximo del texto */
+  margin: 0 auto;
+  /* centra el párrafo */
 }
