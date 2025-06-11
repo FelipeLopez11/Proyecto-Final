@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -12,154 +13,206 @@
 
   <!-- Estilos principales -->
   <link rel="stylesheet" href="css/paneles.css" />
+  <link rel="stylesheet" href="css/nav_footer.css" />
 </head>
 
 <body>
-  <!-- ▸ BARRA SUPERIOR -->
-  <header class="navbar">
-    <h1 class="brand">
-      <img src="img/panel-solar.png" alt="Icono panel solar" />
-      Energia rinnovabile
-    </h1>
 
-    <nav>
-      <ul class="nav-menu">
-        <li><a href="index.html">Inicio</a></li>
-        <li><a href="#">Barra búsqueda</a></li>
-        <li><a id="iniciar_sesionBtn" href="login.html">Iniciar sesión</a></li>
-        <li><a id="cerrar_sesionBtn" class="hidden" href="index.html">Cerrar sesión</a></li>
-        <li><a href="ventajas_solar.html">Visualización Consumo</a></li>
-        <li><a class="active" href="Funcionamiento.html">Páneles Solares</a></li>
-        <li><a href="nosotros.html">¿Quiénes Somos?</a></li>
-      </ul>
-    </nav>
-  </header>
+  <div class="imagen-galeria">
+    <!-- HTML DE LA BARRA Y EL NAVBAR -->
+    <!-- ▸ BARRA SUPERIOR MODERNA -->
+    <header class="navbar">
+      <h1 class="brand">
+        <img src="img/panel-solar.png" alt="Icono panel solar" />
+        Energia rinnovabile
+      </h1>
 
-  <main>
+      <nav>
+        <ul class="nav-menu">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="#">Barra búsqueda</a></li>
 
-    <!--SECCIÓN 1 -->
-    <section id="inicio" class="section1 st">
-      <h2 class="titulo">Paneles Solares</h2>
+          <li><a href="ventajas_solar.html">Visualización Consumo</a></li>
+          <!-- Página actual: Páneles Solares -->
+          <li>
+            <a href="Funcionamiento.html">Páneles Solares</a>
+          </li>
+          <li><a href="nosotros.html">¿Quiénes Somos?</a></li>
+          <li id="sesion_container">
+            <!-- Se rellenará dinámicamente -->
+          </li>
+        </ul>
+      </nav>
+    </header>
 
-      <div class="grid-hero">
-        <div class="texto">
-          <p>
-            Un sistema fotovoltaico convierte la luz en energía eléctrica de manera silenciosa y sin piezas móviles. Cada metro cuadrado de panel evita al año la emisión de más de 50 kg de CO₂, lo que equivale a plantar dos árboles. Además, los precios de las instalaciones han caído un 80 % en la última década, de modo que el retorno de la inversión suele llegar entre 4 y 6 años, mientras el equipo sigue produciendo durante más de 20.
-          </p>
+    <main>
+
+      <!--SECCIÓN 1 -->
+      <section id="inicio" class="section1 st">
+        <h2 class="titulo">Páneles Solares</h2>
+
+        <div class="grid-hero">
+          <div class="texto">
+            <p>
+              Un sistema fotovoltaico convierte la luz en energía eléctrica de manera silenciosa y sin piezas móviles.
+              Cada metro cuadrado de panel evita al año la emisión de más de 50 kg de CO₂, lo que equivale a plantar dos
+              árboles. Además, los precios de las instalaciones han caído un 80 % en la última década, de modo que el
+              retorno de la inversión suele llegar entre 4 y 6 años, mientras el equipo sigue produciendo durante más de
+              20.
+            </p>
+          </div>
+
+          <div class="imagen img1">
+            <img src="img/solar1.jpg" alt="Distribución de paneles solares">
+          </div>
         </div>
+      </section>
 
-        <div class="imagen img1">
-          <img src="img/solar1.jpg" alt="Distribución de paneles solares">
-        </div>
-      </div>
-    </section>
-
-    <!-- =====================================================
+      <!-- =====================================================
          SECCIÓN 2 • ¿QUÉ SON?
          ===================================================== -->
-    <section id="info" class="section2 st">
-      <h2 class="titulo">¿Qué Son?</h2>
+      <section id="info" class="section2 st">
+        <h2 class="titulo">¿Qué Son?</h2>
 
-      <!-- Intro rápida -->
-      <div class="intro-grid">
-        <div class="intro-text">
-          <p>
-            Las células de silicio generan corriente continua cuando los fotones liberan electrones en el material semiconductor. Un inversor la transforma en corriente alterna para alimentar los electrodomésticos o volcarla a la red. Al estar modulados en filas independientes, los paneles siguen funcionando incluso si una parte queda sombreada, aumentando la confiabilidad del sistema.
-          </p>
-        </div>
-        <div class="intro-img">
-          <img src="img/queson.jpg" alt="¿Qué son los paneles solares?">
-        </div>
-      </div>
-
-      <!-- Tarjetas principales -->
-      <div class="cards">
-        <div class="card">
-          <h3>Ventajas</h3>
-          <ul>
-            <li>Ahorro en la factura de luz.</li>
-            <li>Energía limpia y sin emisiones.</li>
-            <li>Vida útil de 20-25 años.</li>
-            <li>Subvenciones e incentivos.</li>
-          </ul>
-          <img src="img/solar2.jpg" alt="Ventajas de los paneles solares">
+        <!-- Intro rápida -->
+        <div class="intro-grid">
+          <div class="intro-text">
+            <p>
+              Las células de silicio generan corriente continua cuando los fotones liberan electrones en el material
+              semiconductor. Un inversor la transforma en corriente alterna para alimentar los electrodomésticos o
+              volcarla a la red. Al estar modulados en filas independientes, los paneles siguen funcionando incluso si
+              una
+              parte queda sombreada, aumentando la confiabilidad del sistema.
+            </p>
+          </div>
+          <div class="intro-img">
+            <img src="img/queson.jpg" alt="¿Qué son los paneles solares?">
+          </div>
         </div>
 
-        <div class="card">
-          <h3>Tipos de Paneles</h3>
-          <ul>
-            <li><strong>Monocristalinos:</strong> Alta eficiencia.</li>
-            <li><strong>Policristalinos:</strong> Precio moderado.</li>
-            <li><strong>Capa fina:</strong> Flexibles y ligeros.</li>
-          </ul>
-          <img src="img/types1.jpg" alt="Tipos de paneles solares">
+        <!-- Tarjetas principales -->
+        <div class="cards">
+          <div class="card">
+            <h3>Ventajas</h3>
+            <ul>
+              <li>Ahorro en la factura de luz.</li>
+              <li>Energía limpia y sin emisiones.</li>
+              <li>Vida útil de 20-25 años.</li>
+              <li>Subvenciones e incentivos.</li>
+            </ul>
+            <img src="img/solar2.jpg" alt="Ventajas de los paneles solares">
+          </div>
+
+          <div class="card">
+            <h3>Tipos de Paneles</h3>
+            <ul>
+              <li><strong>Monocristalinos:</strong> Alta eficiencia.</li>
+              <li><strong>Policristalinos:</strong> Precio moderado.</li>
+              <li><strong>Capa fina:</strong> Flexibles y ligeros.</li>
+            </ul>
+            <img src="img/types1.jpg" alt="Tipos de paneles solares">
+          </div>
+
+          <div class="card st">
+            <h3>Mantenimiento Básico</h3>
+            <ul>
+              <li>Limpieza cada 6 meses.</li>
+              <li>Inspección visual periódica.</li>
+              <li>Revisión eléctrica anual.</li>
+            </ul>
+            <img src="img/inclinacion1.jpg" alt="Mantenimiento de paneles">
+          </div>
+        </div>
+      </section>
+
+      <!--SECCIÓN 3 • MANTENIMIENTO-->
+      <section id="mantenimiento" class="section3 st">
+        <h2 class="titulo">Mantenimiento y Buenas Prácticas</h2>
+
+        <!-- Intro -->
+        <div class="intro-grid">
+          <div class="intro-text st">
+            <p>
+              Un mantenimiento puede adecuado incrementar la producción anual hasta un 12 %. Las revisiones periódicas
+              detectan microfisuras y conexiones sueltas antes de que se traduzcan en pérdidas de rendimiento. Llevar un
+              registro digital de limpiezas, inspecciones y mediciones facilita la garantía y aumenta el valor de
+              reventa
+              de la instalación.
+            </p>
+          </div>
+          <div class="intro-img img1">
+            <img src="img/solar0.jpg" alt="Buenas prácticas">
+          </div>
         </div>
 
-        <div class="card st">
-          <h3>Mantenimiento Básico</h3>
-          <ul>
-            <li>Limpieza cada 6 meses.</li>
-            <li>Inspección visual periódica.</li>
-            <li>Revisión eléctrica anual.</li>
-          </ul>
-          <img src="img/inclinacion1.jpg" alt="Mantenimiento de paneles">
-        </div>
-      </div>
-    </section>
+        <!-- Cuidados -->
+        <div class="tips">
+          <div class="tip">
+            <h3>Limpieza</h3>
+            <p>Límpialos con agua y jabón suave cuando estén fríos.</p>
+            <img src="img/limpiesa1.jpg" alt="Limpieza">
+          </div>
 
-    <!--SECCIÓN 3 • MANTENIMIENTO-->
-    <section id="mantenimiento" class="section3 st">
-      <h2 class="titulo">Mantenimiento y Buenas Prácticas</h2>
+          <div class="tip">
+            <h3>Inspección Visual</h3>
+            <p>Busca grietas, polvo o sombras que tapen la luz.</p>
+            <img src="img/inspeccion1.jpg" alt="Inspección visual">
+          </div>
 
-      <!-- Intro -->
-      <div class="intro-grid">
-        <div class="intro-text st">
-          <p>
-            Un mantenimiento puede adecuado incrementar la producción anual hasta un 12 %. Las revisiones periódicas detectan microfisuras y conexiones sueltas antes de que se traduzcan en pérdidas de rendimiento. Llevar un registro digital de limpiezas, inspecciones y mediciones facilita la garantía y aumenta el valor de reventa de la instalación.
-          </p>
-        </div>
-        <div class="intro-img img1">
-          <img src="img/solar0.jpg" alt="Buenas prácticas">
-        </div>
-      </div>
+          <div class="tip">
+            <h3>Revisión Eléctrica</h3>
+            <p>Comprueba el inversor y la producción esperada.</p>
+            <img src="img/revision1.jpg" alt="Revisión eléctrica">
+          </div>
 
-      <!-- Cuidados -->
-      <div class="tips">
-        <div class="tip">
-          <h3>Limpieza</h3>
-          <p>Límpialos con agua y jabón suave cuando estén fríos.</p>
-          <img src="img/limpiesa1.jpg" alt="Limpieza">
+          <div class="tip">
+            <h3>Seguridad</h3>
+            <ul>
+              <li>Guantes y gafas al manipular.</li>
+              <li>Interruptor general apagado.</li>
+              <li>No pisar los paneles.</li>
+            </ul>
+            <img src="img/seguridad1.png" alt="Seguridad">
+          </div>
         </div>
+      </section>
+    </main>
+  </div>
 
-        <div class="tip">
-          <h3>Inspección Visual</h3>
-          <p>Busca grietas, polvo o sombras que tapen la luz.</p>
-          <img src="img/inspeccion1.jpg" alt="Inspección visual">
-        </div>
-
-        <div class="tip">
-          <h3>Revisión Eléctrica</h3>
-          <p>Comprueba el inversor y la producción esperada.</p>
-          <img src="img/revision1.jpg" alt="Revisión eléctrica">
-        </div>
-
-        <div class="tip">
-          <h3>Seguridad</h3>
-          <ul>
-            <li>Guantes y gafas al manipular.</li>
-            <li>Interruptor general apagado.</li>
-            <li>No pisar los paneles.</li>
-          </ul>
-          <img src="img/seguridad1.png" alt="Seguridad">
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <!-- PIE DE PÁGINA -->
   <footer class="footer">
-    <p>Creado por Grupo Vieta renovabili</p>
-    <p>© Todos los derechos reservados – 2025</p>
+    <div class="footer-container">
+      <div class="footer-section">
+        <h3>Sobre Nosotros</h3>
+        <p>
+          Comprometidos con el futuro del planeta a través de soluciones
+          solares inteligentes y sostenibles.
+        </p>
+      </div>
+      <div class="footer-section">
+        <h3>Contacto</h3>
+        <p>Email: <a href="mailto:contacto@Energiarinnovabile.com">contacto@Energiarinnovabile.com</a></p>
+        <p>Tel: <a href="tel:+57 320 000 0000">+57 320 000 0000</a></p>
+        <p>Medellín, Colombia</p>
+      </div>
+      <div class="footer-section">
+        <h3>Síguenos</h3>
+        <div class="social-icons">
+          <a target="_blank" href="#"><img src="icons/facebook.svg" alt="Facebook" /></a>
+          <a target="_blank" href="#"><img src="icons/instagram.svg" alt="Instagram" /></a>
+          <a href="#"><img src="icons/linkedin.svg" alt="LinkedIn" /></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 Vieta Renovabili. Todos los derechos reservados.</p>
+    </div>
   </footer>
+
+
+  <script src="js/validar_botones.js"></script>
+  <script src="js/validar_sesion.js"></script>
+
+
 </body>
+
 </html>

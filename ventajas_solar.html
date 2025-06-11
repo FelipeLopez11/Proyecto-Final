@@ -5,7 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ventajas de los páneles solares</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/nav_footer.css">
+
 </head>
 
 <body>
@@ -69,10 +72,31 @@
                 <div class="result-card">
                     <p><strong>Ahorro energético estimado: </strong> <span id="ahorro-kwh">Kwh</span></p>
                     <p><strong>Reducción en emisiones de CO₂: </strong> <span id="ahorro-co2">Kg</span></p>
-                    <p><strong>Ahorro económico estimiado: </strong> <span id="ahorro-usd">USD</span></p>
+                    <p><strong>Ahorro económico estimiado: </strong> <span id="ahorro-cop">COP</span></p>
                 </div>
             </section>
         </main>
+    </div>
+
+    <div class="main-container">
+        <section class="grafico" id="grafico-comparativa">
+            <h2>Comparativa de generación eléctrica renovable en Colombia (2020 vs 2025)</h2>
+            <canvas id="graficoComparativo"></canvas>
+        </section>
+
+        <div class="fuentes-bibiograficas">
+            <strong>Fuentes:</strong>
+            <ul>
+                <li>Ministerio de Minas y Energía de Colombia – <a href="https://www.minenergia.gov.co"
+                        target="_blank">minenergia.gov.co</a></li>
+                <li>UPME - Unidad de Planeación Minero Energética – <a href="https://www1.upme.gov.co"
+                        target="_blank">upme.gov.co</a></li>
+                <li>IDEAM - Instituto de Hidrología, Meteorología y Estudios Ambientales – <a
+                        href="https://www.ideam.gov.co" target="_blank">ideam.gov.co</a></li>
+                <li>Informe REN21: Renewable 2023 Global Status Report – <a
+                        href="https://www.ren21.net/reports/global-status-report/" target="_blank">ren21.net</a></li>
+            </ul>
+        </div>
     </div>
 
 
@@ -87,8 +111,8 @@
             </div>
             <div class="footer-section">
                 <h3>Contacto</h3>
-                <p>Email: contacto@Energiarinnovabile..com</p>
-                <p>Tel: +57 320 000 0000</p>
+                <p>Email: <a href="mailto:contacto@Energiarinnovabile.com">contacto@Energiarinnovabile.com</a></p>
+                <p>Tel: <a href="tel:+57 320 000 0000">+57 320 000 0000</a></p>
                 <p>Medellín, Colombia</p>
             </div>
             <div class="footer-section">

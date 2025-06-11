@@ -1,9 +1,13 @@
 html,
 body {
-  margin: 0; /* Fuera márgenes por defecto */
-  padding: 0; /* Fuera rellenos por defecto */
-  width: 100%; /* 100 % del ancho (horizontal) */
-  height: 100%; /* 100 % del alto (vertical)   */
+  margin: 0;
+  /* Fuera márgenes por defecto */
+  padding: 0;
+  /* Fuera rellenos por defecto */
+  width: 100%;
+  /* 100 % del ancho (horizontal) */
+  height: 100%;
+  /* 100 % del alto (vertical)   */
 }
 
 /* -------------------------------------------------------
@@ -13,9 +17,12 @@ body {
    y empuja el footer al fondo gracias a flex: 1 en <main>.
 -------------------------------------------------------*/
 body {
-  display: flex; /* Activamos Flexbox        */
-  flex-direction: column; /* Dirección = columna      */
-  min-height: 100vh; /* 100 % de la altura vista */
+  display: flex;
+  /* Activamos Flexbox        */
+  flex-direction: column;
+  /* Dirección = columna      */
+  min-height: 100vh;
+  /* 100 % de la altura vista */
 }
 
 /* --- Google Font: Baumans --- */
@@ -26,12 +33,18 @@ body {
 
 .texto p,
 .intro-text p {
-  font-family: "Poppins", sans-serif;   /* letra moderna y legible   */
-  font-size: 1.1rem;                    /* algo más grande           */
-  font-weight: 500;                     /* seminegrita para énfasis   */
-  line-height: 1.6;                     /* espacio entre líneas      */
-  text-align: justify;                  /* borde limpio en columnas  */
-  color: #1a1a1a;                       /* gris oscuro, no puro negro*/
+  font-family: "Poppins", sans-serif;
+  /* letra moderna y legible   */
+  font-size: 1.1rem;
+  /* algo más grande           */
+  font-weight: 500;
+  /* seminegrita para énfasis   */
+  line-height: 1.6;
+  /* espacio entre líneas      */
+  text-align: justify;
+  /* borde limpio en columnas  */
+  color: #1a1a1a;
+  /* gris oscuro, no puro negro*/
 }
 
 /* Respeta un margen inferior para que el texto “respire” */
@@ -39,107 +52,7 @@ body {
 .intro-text p:last-child {
   margin-bottom: 0.5rem;
 }
-/* 1. TOP-BAR (más alta, con transparencia ‘glassmorphism’ gris) ── */
-.navbar {
-  position: sticky;
-  top: 0;
-  z-index: 999;
 
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-
-  min-height:auto; /* ⇪ grosor vertical */
-  text-align: center;
-  padding: 0 2.5rem;
-
-  /* Fondo semitransparente en escala de grises + difuminado */
-  background: rgba(12, 208, 32, 0.599); /* gris 65 % opacidad   */
-  backdrop-filter: blur(8px); /* efecto ‘vidrio esmerilado’ */
-
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-}
-
-/* 2. LOGO / TÍTULO  */
-.brand {
-  margin: 0;
-  font-family: "Iceland", futurista; /* Tipografia futurista llamativa */
-  font-weight: 500;
-  font-size: 2.rem;
-  color: #010101;
-  letter-spacing: 0.8px;
-  gap: 4rem;
-  margin: 0;
-  display: flex;
-  align-items: center;
-  gap: 0.4rem;
-}
-.brand img {
-  width: 48px;
-  height: 48px;
-  object-fit: contain;
-}
-
-/* 3. MENÚ (mejor separación y orden) ─────────────────────────── */
-.nav-menu {
-  list-style: none;
-  display: flex;
-  gap: 2.5rem; /* Espacio uniforme entre enlaces */
-  margin: 0;
-  padding: 0;
-}
-
-/* Enlaces base */
-.nav-menu a {
-  position: relative;
-  font: 600 1.05rem "Poppins", sans-serif;
-  color: #000000;
-  text-decoration: none;
-  opacity: 0.9;
-  transition: opacity 0.25s ease;
-}
-
-/* Hover: sub-rayado animado – ajustamos grosor y color */
-.nav-menu a::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: -8px; /* un poco más abajo porque la barra es más alta */
-  width: 100%;
-  height: 2px;
-  background: #f2ff00; /* turquesa brillante; cambia si quieres */
-  transform: scaleX(0);
-  transform-origin: center;
-  transition: transform 0.3s ease;
-}
-.nav-menu a:hover {
-  opacity: 1;
-}
-.nav-menu a:hover::after {
-  transform: scaleX(1);
-}
-
-/* Pestaña activa siempre marcada */
-.nav-menu a.active,
-.nav-menu a.active:hover {
-  opacity: 1;
-}
-.nav-menu a.active::after {
-  transform: scaleX(1);
-  background: #fff; /* Línea blanca para la página actual */
-}
-
-/* 4. Responsive simple (≤ 720 px) ─────────────────────────────── */
-@media (max-width: 720px) {
-  .navbar {
-    height: 72px;
-    padding: 0 1rem;
-  }
-  .nav-menu {
-    gap: 1rem;
-    font-size: 0.9rem;
-  }
-}
 
 /* -------------------------------------------------------
    5. CONTENIDO PRINCIPAL
@@ -154,52 +67,83 @@ body {
 }
 
 
-img { max-width: 100%; display: block; border-radius: 4px; }
-.img1{
-   width: 400px;
+.imagen-galeria img {
+  max-width: 100%;
   display: block;
-  margin: 0 auto;      /* 0 arriba-abajo, auto izquierda/derecha */
+  border-radius: 4px;
+}
+
+.img1 {
+  width: 400px;
+  display: block;
+  margin: 0 auto;
+  /* 0 arriba-abajo, auto izquierda/derecha */
 
 }
 
-.st  {
-  background: #ffffff;           /* fondo blanco limpio */
-  padding: 50px 20px;            /* espacio interior */
-  text-align: center;            /* todo centrado */
+.st {
+  background: #ffffff;
+  /* fondo blanco limpio */
+  padding: 50px 20px;
+  /* espacio interior */
+  text-align: center;
+  /* todo centrado */
 }
 
 .st h1 {
-  font-size: 2.8rem;             /* título muy visible */
-  color: #096f60;                /* verde oscuro */
-  margin-bottom: 20px;           /* espacio debajo del título */
+  font-size: 2.8rem;
+  /* título muy visible */
+  color: #096f60;
+  /* verde oscuro */
+  margin-bottom: 20px;
+  /* espacio debajo del título */
 }
 
 .st h2 {
-  font-size: 2.8rem;             /* título muy visible */
-  color: #096f60;                /* verde oscuro */
-  margin-bottom: 20px;           /* espacio debajo del título */
+  font-size: 2.8rem;
+  /* título muy visible */
+  color: #096f60;
+  /* verde oscuro */
+  margin-bottom: 20px;
+  /* espacio debajo del título */
 }
+
 .st h2 {
-  font-size: 2.8rem;             /* título muy visible */
-  color: #096f60;                /* verde oscuro */
-  margin-bottom: 20px;           /* espacio debajo del título */
+  font-size: 2.8rem;
+  /* título muy visible */
+  color: #096f60;
+  /* verde oscuro */
+  margin-bottom: 20px;
+  /* espacio debajo del título */
 }
 
 .st p {
-  font-size: 1.125rem;           /* párrafo legible */
-  line-height: 1.7;              /* separación de líneas */
-  color: #555;                   /* gris medio */
-  max-width: 800px;              /* ancho máximo del texto */
-  margin: 0 auto;                /* centra el párrafo */
+  font-size: 1.125rem;
+  /* párrafo legible */
+  line-height: 1.7;
+  /* separación de líneas */
+  color: #555;
+  /* gris medio */
+  max-width: 800px;
+  /* ancho máximo del texto */
+  margin: 0 auto;
+  /* centra el párrafo */
 }
 
 
 /* ─── TITULOS DE SECCIÓN ───────────────────────────────────── */
-.titulo { text-align: center; font-size: 2rem; margin-bottom: 2rem; }
+.titulo {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
 
 /* ─── SECCIÓN 1 • HERO ─────────────────────────────────────── */
 .section1 {
-  width: 100%; max-width: 1200px; margin: auto; padding: 3rem 1rem;
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 3rem 1rem;
   display: grid;
   grid-template-areas:
     "titulo  titulo"
@@ -207,13 +151,30 @@ img { max-width: 100%; display: block; border-radius: 4px; }
   grid-template-columns: 1fr 1fr;
   gap: 2rem;
 }
-.section1 .titulo { grid-area: titulo; }
-.grid-hero { display: contents; }
-.texto  { grid-area: texto; }
-.imagen { grid-area: imagen; }
+
+.section1 .titulo {
+  grid-area: titulo;
+}
+
+.grid-hero {
+  display: contents;
+}
+
+.texto {
+  grid-area: texto;
+}
+
+.imagen {
+  grid-area: imagen;
+}
 
 /* SECCIÓN 2 • ¿QUÉ SON? */
-.section2 { width: 100%; max-width: 1200px; margin: auto; padding: 3rem 1rem; }
+.section2 {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 3rem 1rem;
+}
 
 .section2 .intro-grid {
   display: grid;
@@ -222,8 +183,14 @@ img { max-width: 100%; display: block; border-radius: 4px; }
   gap: 2rem;
   margin-bottom: 2.5rem;
 }
-.intro-text { grid-area: intro-text; }
-.intro-img  { grid-area: intro-img; }
+
+.intro-text {
+  grid-area: intro-text;
+}
+
+.intro-img {
+  grid-area: intro-img;
+}
 
 .cards {
   display: grid;
@@ -231,12 +198,26 @@ img { max-width: 100%; display: block; border-radius: 4px; }
   grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
 }
-.cards .card:nth-child(1) { grid-area: card1; }
-.cards .card:nth-child(2) { grid-area: card2; }
-.cards .card:nth-child(3) { grid-area: card3; }
+
+.cards .card:nth-child(1) {
+  grid-area: card1;
+}
+
+.cards .card:nth-child(2) {
+  grid-area: card2;
+}
+
+.cards .card:nth-child(3) {
+  grid-area: card3;
+}
 
 /* ─── SECCIÓN 3 • MANTENIMIENTO ────────────────────────────── */
-.section3 { width: 100%; max-width: 1200px; margin: auto; padding: 3rem 1rem; }
+.section3 {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 3rem 1rem;
+}
 
 .section3 .intro-grid {
   display: grid;
@@ -245,8 +226,14 @@ img { max-width: 100%; display: block; border-radius: 4px; }
   gap: 2rem;
   margin-bottom: 2.5rem;
 }
-.section3 .intro-text { grid-area: intro-text; }
-.section3 .intro-img  { grid-area: intro-img; }
+
+.section3 .intro-text {
+  grid-area: intro-text;
+}
+
+.section3 .intro-img {
+  grid-area: intro-img;
+}
 
 .tips {
   display: grid;
@@ -255,18 +242,40 @@ img { max-width: 100%; display: block; border-radius: 4px; }
 }
 
 /* ─── TARJETAS GENÉRICAS (card / tip) ───────────────────────── */
-.card, .tip {
+.card,
+.tip {
   border: 2px solid #b2ffb0;
   border-radius: 10px;
   padding: 1.25rem;
-  box-shadow: 0 3px 6px rgba(0,0,0,.06);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, .06);
   transition: transform .25s;
   background: #f9faff;
 }
-.card:hover, .tip:hover { transform: translateY(-4px); }
-.card h3, .tip h3 { margin-bottom: .75rem; font-size: 1.25rem; }
-.card ul, .tip ul { margin-left: 1.2rem; margin-bottom: 1rem; line-height: 1.4; }
-.tip p, .card p, .card li, .tip li { font-size: .95rem; }
+
+.card:hover,
+.tip:hover {
+  transform: translateY(-4px);
+}
+
+.card h3,
+.tip h3 {
+  margin-bottom: .75rem;
+  font-size: 1.25rem;
+}
+
+.card ul,
+.tip ul {
+  margin-left: 1.2rem;
+  margin-bottom: 1rem;
+  line-height: 1.4;
+}
+
+.tip p,
+.card p,
+.card li,
+.tip li {
+  font-size: .95rem;
+}
 
 /* ─── RESPONSIVE (≤ 768 px) ────────────────────────────────── */
 @media (max-width: 768px) {
@@ -277,6 +286,7 @@ img { max-width: 100%; display: block; border-radius: 4px; }
       "texto";
     grid-template-columns: 1fr;
   }
+
   .section2 .intro-grid,
   .section3 .intro-grid {
     grid-template-areas:
@@ -284,36 +294,12 @@ img { max-width: 100%; display: block; border-radius: 4px; }
       "intro-text";
     grid-template-columns: 1fr;
   }
+
   .cards {
     grid-template-areas:
       "card1"
       "card2"
       "card3";
     grid-template-columns: 1fr;
-  }
-}
-
-.footer {
-  background-color: #067860; /* azul oscuro ecológico */
-  color: #ecf0f1; /* texto claro */
-  padding: 40px 0 20px;
-  font-family: "Segoe UI", sans-serif;
-}
-.footer p {
-  color: #fff;
-  text-align: center; /* Centrado del texto */
-}
-
-/* -------------------------------------------------------
-   7. MEDIA QUERY (pantallas pequeñas ≤ 600 px)
-   Ajustamos espaciado/texto para móviles.
--------------------------------------------------------*/
-@media (max-width: 600px) {
-  .header,
-  .navbar1,
-  main,
-  .footer {
-    padding: 0.75rem; /* Un poco menos de relleno */
-    font-size: 0.9rem; /* Texto ligeramente menor  */
   }
 }
