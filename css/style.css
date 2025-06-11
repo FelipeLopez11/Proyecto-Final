@@ -5,9 +5,8 @@
 }
 
 body {
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: Georgia, "Times New Roman", Times, serif;
   line-height: 1.8;
-
 }
 
 html,
@@ -15,6 +14,8 @@ body {
   height: 100%;
   display: flex;
   flex-direction: column;
+  background: transparent;
+
 }
 
 h1 {
@@ -23,6 +24,13 @@ h1 {
 
 p {
   font-size: 20px;
+}
+.portada-img {
+  display: block; /* Para poder usar margin auto si quieres centrarla */
+  width: 800px; /* Anchura fija en píxeles (o usa %: width: 100%;) */
+  height: 400px; /* Altura fija */
+  object-fit: cover; /* Recorta/escala la imagen para cubrir el área sin deformar */
+  margin: 0 auto; /* Centra horizontalmente */
 }
 
 /* TERMINA LOS ESTILOS GLOBALES */
@@ -40,7 +48,7 @@ p {
 }
 
 form fieldset {
-  border: 2px solid #ACAD94;
+  border: 2px solid #acad94;
   border-radius: 8px;
   padding: 20px;
   margin-bottom: 20px;
@@ -48,7 +56,7 @@ form fieldset {
 
 form legend {
   font-weight: bold;
-  color: #ACAD94;
+  color: #acad94;
 }
 
 label {
@@ -154,7 +162,6 @@ select {
   font-size: 1rem;
 }
 
-
 .calcular-btn {
   text-align: center;
 }
@@ -168,7 +175,6 @@ select {
   cursor: pointer;
   border-radius: 4px;
   transition: background-color 0.3s;
-
 }
 
 #calcular-btn:hover {
@@ -195,7 +201,7 @@ select {
 .sesion_iniciada_html {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  border: solid 10px #ACAD94;
+  border: solid 10px #acad94;
   width: 50%;
   margin: 0 auto;
 }
