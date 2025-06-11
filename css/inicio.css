@@ -57,7 +57,7 @@
   padding: 20px;
   border-radius: 8px;
   text-align: center;
-  /* position: relative; */
+  position: relative;
   cursor: pointer;
   color: #2A2A2A;
 }
@@ -167,7 +167,7 @@
 
 
 .energia {
-  background: #f5f5f5;
+  background: #fff;
   /* fondo gris claro */
   padding: 60px 20px;
   /* espacio interior */
@@ -222,7 +222,7 @@
   /* texto legible */
   line-height: 1.6;
   /* separación de líneas */
-  color: #333;
+  color: black;
   /* gris oscuro para legibilidad */
   margin-bottom: 24px;
   /* espacio antes del botón */
@@ -283,7 +283,7 @@
   /* párrafo legible */
   line-height: 1.7;
   /* separación de líneas */
-  color: #555;
+  color: #000;
   /* gris medio */
   max-width: 800px;
   /* ancho máximo del texto */
