@@ -23,17 +23,17 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
-const currentPath = window.location.pathname.split('/').pop();
-const navLinks = document.querySelectorAll('.nav-menu a');
-navLinks.forEach(link => {
-    link.classList.remove('active');
+    const currentPath = window.location.pathname.split('/').pop();
+    const navLinks = document.querySelectorAll('.nav-menu a');
+    navLinks.forEach(link => {
+        link.classList.remove('active');
 
-    const linkPath = link.getAttribute('href');
+        const linkPath = link.getAttribute('href');
 
-    // Compara si el 'href' del enlace coincide con la ruta actual
-    // o si es la página de inicio (index.html) cuando la ruta es la raíz ('')
-    if (linkPath === currentPath || (currentPath === '' && linkPath === 'index.html')) {
-        link.classList.add('active');
-    }
-});
+        // Compara si el 'href' del enlace coincide con la ruta actual
+        // o si es la página de inicio (index.html) cuando la ruta es la raíz ('')
+        if (linkPath === currentPath || (currentPath === '' && linkPath === 'index.html')) {
+            link.classList.add('active');
+        }
+    });
 });

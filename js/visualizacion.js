@@ -54,7 +54,7 @@ document.addEventListener('DOMContentLoaded', function () {
                     data: [63, 1.5, 1.5, 34, 0],
                     backgroundColor: 'rgba(54, 162, 235, 0.6)',
                     borderColor: 'rgba(54, 162, 235, 1)',
-                    borderWidth: 1
+                    borderWidth: 1,
                 },
                 {
                     label: '2025 (estimado)',

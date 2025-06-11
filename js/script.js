@@ -4,11 +4,11 @@ document.addEventListener('DOMContentLoaded', () => {
     const password = 'admin';
 
     const sesion = document.getElementById('sesion');
-    const usernameInput = document.getElementById('username'); 
-    const passwordInput = document.getElementById('password'); 
-    const mensaje = document.getElementById('mensaje'); 
+    const usernameInput = document.getElementById('username');
+    const passwordInput = document.getElementById('password');
+    const mensaje = document.getElementById('mensaje');
 
-     if (sesion) {
+    if (sesion) {
         sesion.addEventListener('submit', (event) => {
             event.preventDefault();
 
