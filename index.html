@@ -1,234 +1,263 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Inicio</title>
-    <link rel="stylesheet" href="css/nav_footer.css">
-    <link rel="stylesheet" href="css/inicio.css">
-</head>
+    <link rel="stylesheet" href="css/nav_footer.css" />
+    <link rel="stylesheet" href="css/inicio.css" />
+  </head>
 
-<body>
-
+  <body>
     <!-- HTML DE LA BARRA Y EL NAVBAR -->
     <!-- ▸ BARRA SUPERIOR MODERNA -->
     <header class="navbar">
-        <h1 class="brand">
-            <img src="img/panel-solar.png" alt="Icono panel solar" />
-            Energia rinnovabile
-        </h1>
+      <h1 class="brand">
+        <img src="img/panel-solar.png" alt="Icono panel solar" />
+        Energia rinnovabile
+      </h1>
 
-        <nav>
-            <ul class="nav-menu">
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="#">Barra búsqueda</a></li>
+      <nav>
+        <ul class="nav-menu">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="#">Barra búsqueda</a></li>
 
-                <li><a href="ventajas_solar.html">Visualización Consumo</a></li>
-                <!-- Página actual: Páneles Solares -->
-                <li>
-                    <a href="Funcionamiento.html">Páneles Solares</a>
-                </li>
-                <li><a href="nosotros.html">¿Quiénes Somos?</a></li>
-                <li id="sesion_container">
-                    <!-- Se rellenará dinámicamente -->
-                </li>
-            </ul>
-        </nav>
+          <li><a href="ventajas_solar.html">Visualización Consumo</a></li>
+          <!-- Página actual: Páneles Solares -->
+          <li>
+            <a href="Funcionamiento.html">Páneles Solares</a>
+          </li>
+          <li><a href="nosotros.html">¿Quiénes Somos?</a></li>
+          <li id="sesion_container">
+            <!-- Se rellenará dinámicamente -->
+          </li>
+        </ul>
+      </nav>
     </header>
-    
-<section class="energia">
-  <!-- contenedor de imagen y texto -->
-  <div class="energia-content">
-    <!-- imagen destacada al inicio -->
-    <img src="img/energia-que.jpg" alt="Manos protegiendo una luz" class="hero-img">
 
-    <!-- bloque de texto sobre la imagen -->
-    <div class="energia-text">
-      <!-- título de bienvenida -->
-      <h2>Bienvenido a Energía Renovable</h2>
-      <!-- subtítulo explicativo -->
-      <p>Descubre cómo tu hogar puede convertirse en un generador de energía limpia y ahorrar en tu factura.</p>
-      <!-- botón de llamada a la acción -->
-      <a href="#definicion-energias" class="btn-energia">Más información</a>
-    </div>
-  </div>
-</section>
+    <section class="energia">
+      <!-- contenedor de imagen y texto -->
+      <div class="energia-content">
+        <!-- imagen destacada al inicio -->
+        <img
+          src="img/portada1.jpg"
+          alt="Manos protegiendo una luz"
+          class="portada-img"
+        />
 
-<!-- ====== PRIMER PÁRRAFO / DEFINICIÓN ====== -->
-<section id="definicion-energias" class="definicion-energias">
-  <!-- título de la sección -->
-  <h1>¿Qué es la energía renovable?</h1>
-  <!-- párrafo de introducción -->
-  <p>
-    Las energías renovables provienen de recursos naturales inagotables como el sol, el viento y el agua.
-    A diferencia de los combustibles fósiles, no se agotan con su uso y generan menos emisiones
-    contaminantes, cuidando así el medio ambiente.
-  </p>
-</section>
+        <!-- bloque de texto sobre la imagen -->
+        <div class="energia-text">
+          <!-- título de bienvenida -->
+          <h2>Bienvenido a Energía Renovable</h2>
+          <!-- subtítulo explicativo -->
+          <p>
+            Descubre cómo tu hogar puede convertirse en un generador de energía
+            limpia y ahorrar en tu factura.
+          </p>
+          <!-- botón de llamada a la acción -->
+          <a href="#definicion-energias" class="btn-energia">Más información</a>
+        </div>
+      </div>
+    </section>
 
-
+    <!-- ====== PRIMER PÁRRAFO / DEFINICIÓN ====== -->
+    <section id="definicion-energias" class="definicion-energias">
+      <!-- título de la sección -->
+      <h1>¿Qué es la energía renovable?</h1>
+      <!-- párrafo de introducción -->
+      <p>
+        Las energías renovables provienen de recursos naturales inagotables como
+        el sol, el viento y el agua. A diferencia de los combustibles fósiles,
+        no se agotan con su uso y generan menos emisiones contaminantes,
+        cuidando así el medio ambiente.
+      </p>
+    </section>
 
     <section class="definicion-energias">
-        <h2>Algunos tipos de energías renovables</h2>
-        <p>Entre las principales formas de energía renovable se encuentra la energía solar, que utiliza la
-            radiación del sol para generar electricidad o calor. Otra fuente importante es la energía eólica,
-            que convierte la fuerza del viento en electricidad. También destaca la energía hidroeléctrica, que
-            utiliza el movimiento del agua, generalmente en presas o ríos, para generar energía eléctrica de
-            manera eficiente </p>
+      <h2>Algunos tipos de energías renovables</h2>
+      <p>
+        Entre las principales formas de energía renovable se encuentra la
+        energía solar, que utiliza la radiación del sol para generar
+        electricidad o calor. Otra fuente importante es la energía eólica, que
+        convierte la fuerza del viento en electricidad. También destaca la
+        energía hidroeléctrica, que utiliza el movimiento del agua, generalmente
+        en presas o ríos, para generar energía eléctrica de manera eficiente
+      </p>
     </section>
 
     <div class="layout-grid-modal">
+      <main class="main-content-modal">
+        <section class="item" onclick="openModal('modal-energia')">
+          <h3>Energía hidroeléctrica</h3>
+          <img src="img/hidroelectrica1.jpg" alt="Energia hidroelectica" />
+        </section>
 
-        <main class="main-content-modal">
+        <section class="item" onclick="openModal('modal-innovacion')">
+          <h3>Energía solar</h3>
+          <img src="img/solar1.jpg" alt="Energia Solar" />
+        </section>
 
-            <section class="item" onclick="openModal('modal-energia')">
-                <h3>Energía hidroeléctrica</h3>
-                <img src="img/hidroelectrica1.jpg" alt="Energia hidroelectica" />
-            </section>
-
-            <section class="item" onclick="openModal('modal-innovacion')">
-                <h3>Energía solar</h3>
-                <img src="img/solar1.jpg" alt="Energia Solar" />
-            </section>
-
-            <section class="item" onclick="openModal('modal-fuerza')">
-                <h3>Energía eólica</h3>
-                <img src="img/eolica1.jpg" alt="Solar urbano" />
-            </section>
-        </main>
+        <section class="item" onclick="openModal('modal-fuerza')">
+          <h3>Energía eólica</h3>
+          <img src="img/eolica1.jpg" alt="Solar urbano" />
+        </section>
+      </main>
     </div>
 
-
-
-
     <div id="modal-energia" class="modal">
-        <div class="modal-content">
-            <span class="close" onclick="closeModal ('modal-energia')">&times;</span>
-            <p>
-                <!-- Uso "<b></b>" para colocar en negrita -->
-                La <b>energía hidroeléctrica</b> utiliza el movimiento del agua, normalmente almacenada en un depósito,
-                para hacer girar una turbina conectada a un generador. Es una de las formas más antiguas de uso de
-                energía y sigue siendo la mayor fuente de energía renovable del mundo en términos de capacidad
-                instalada.
-            </p>
-        </div>
+      <div class="modal-content">
+        <span class="close" onclick="closeModal ('modal-energia')"
+          >&times;</span
+        >
+        <p>
+          <!-- Uso "<b></b>" para colocar en negrita -->
+          La <b>energía hidroeléctrica</b> utiliza el movimiento del agua,
+          normalmente almacenada en un depósito, para hacer girar una turbina
+          conectada a un generador. Es una de las formas más antiguas de uso de
+          energía y sigue siendo la mayor fuente de energía renovable del mundo
+          en términos de capacidad instalada.
+        </p>
+      </div>
     </div>
 
     <div id="modal-innovacion" class="modal">
-        <div class="modal-content">
-            <span class="close" onclick="closeModal ('modal-innovacion')">&times;</span>
-            <p>
-                La <b> energía solar </b> usa la luz del sol para generar calor o electricidad. Hay dos maneras
-                principales de tomar esta energía: la energía solar fotovoltaica, que cambia de manera directa la luz
-                solar en electricidad con celdas solares; y la energía solar térmica, que emplea colectores solares para
-                caliente agua o aire usado en casas, negocios o en sistemas de calor.
-            </p>
-        </div>
+      <div class="modal-content">
+        <span class="close" onclick="closeModal ('modal-innovacion')"
+          >&times;</span
+        >
+        <p>
+          La <b> energía solar </b> usa la luz del sol para generar calor o
+          electricidad. Hay dos maneras principales de tomar esta energía: la
+          energía solar fotovoltaica, que cambia de manera directa la luz solar
+          en electricidad con celdas solares; y la energía solar térmica, que
+          emplea colectores solares para caliente agua o aire usado en casas,
+          negocios o en sistemas de calor.
+        </p>
+      </div>
     </div>
 
     <div id="modal-fuerza" class="modal">
-        <div class="modal-content">
-            <span class="close" onclick="closeModal ('modal-fuerza')">&times;</span>
-            <p>
-                La <b>energía eólica</b> se genera mediante el movimiento del aire. Las turbinas eólicas convierten la
-                energía cinética del viento en energía mecánica, que luego se convierte en energía eléctrica mediante un
-                generador. Esta fuente de energía ha experimentado un importante crecimiento en las últimas décadas,
-                especialmente en países como Alemania, España, China y Estados Unidos
-            </p>
-        </div>
+      <div class="modal-content">
+        <span class="close" onclick="closeModal ('modal-fuerza')">&times;</span>
+        <p>
+          La <b>energía eólica</b> se genera mediante el movimiento del aire.
+          Las turbinas eólicas convierten la energía cinética del viento en
+          energía mecánica, que luego se convierte en energía eléctrica mediante
+          un generador. Esta fuente de energía ha experimentado un importante
+          crecimiento en las últimas décadas, especialmente en países como
+          Alemania, España, China y Estados Unidos
+        </p>
+      </div>
     </div>
 
     <!-- INICIO DE CONSUMO, INNOVACION Y TENDENCIAS Y COMUNIDADES ENERGETICAS -->
     <div class="complemento">
-        <div class="consumo">
-            <div>
-                <img src="img/consumo1.jpg" alt="Consumo de energía">
-            </div>
-            <div>
-                <h2>El consumo de energía</h2>
-                <hr>
-                <p>En las últimas décadas, el consumo energético mundial ha aumentado de forma exponencial, impulsado
-                    por el desarrollo tecnológico y el crecimiento poblacional. Este incremento ha generado una mayor
-                    presión sobre los recursos no renovables, como el petróleo y el gas natural. Por ello, se hace cada
-                    vez más necesario adoptar fuentes de energía más limpias y sostenibles. El uso eficiente de la
-                    energía, junto con la transición hacia energías renovables, es clave para reducir la huella de
-                    carbono y mitigar los efectos del cambio climático.</p>
-            </div>
+      <div class="consumo">
+        <div>
+          <img src="img/consumo1.jpg" alt="Consumo de energía" />
         </div>
+        <div>
+          <h2>El consumo de energía</h2>
+          <hr />
+          <p>
+            En las últimas décadas, el consumo energético mundial ha aumentado
+            de forma exponencial, impulsado por el desarrollo tecnológico y el
+            crecimiento poblacional. Este incremento ha generado una mayor
+            presión sobre los recursos no renovables, como el petróleo y el gas
+            natural. Por ello, se hace cada vez más necesario adoptar fuentes de
+            energía más limpias y sostenibles. El uso eficiente de la energía,
+            junto con la transición hacia energías renovables, es clave para
+            reducir la huella de carbono y mitigar los efectos del cambio
+            climático.
+          </p>
+        </div>
+      </div>
 
-        <div class="consumo">
-            <div>
-                <h2>Innovación y tendencias</h2>
-                <hr>
-                <p>La innovación en el sector energético está transformando la forma en que generamos, almacenamos y
-                    consumimos electricidad. Tecnologías como los paneles solares de alta eficiencia, las turbinas
-                    eólicas inteligentes y los sistemas de almacenamiento con baterías de litio están marcando
-                    tendencia. Además, el uso de inteligencia artificial y redes inteligentes (smart grids) permite una
-                    gestión más precisa y equilibrada del suministro energético. Estas tendencias apuntan a un futuro
-                    más sostenible, donde las energías limpias sean accesibles para todos.</p>
-            </div>
-            <div>
-                <img src="img/tendencia1.jpg" alt="tendencia" class="imagen">
-            </div>
+      <div class="consumo">
+        <div>
+          <h2>Innovación y tendencias</h2>
+          <hr />
+          <p>
+            La innovación en el sector energético está transformando la forma en
+            que generamos, almacenamos y consumimos electricidad. Tecnologías
+            como los paneles solares de alta eficiencia, las turbinas eólicas
+            inteligentes y los sistemas de almacenamiento con baterías de litio
+            están marcando tendencia. Además, el uso de inteligencia artificial
+            y redes inteligentes (smart grids) permite una gestión más precisa y
+            equilibrada del suministro energético. Estas tendencias apuntan a un
+            futuro más sostenible, donde las energías limpias sean accesibles
+            para todos.
+          </p>
         </div>
-        <div class="consumo">
-            <div>
-                <img src="img/comunidad1.jpg" alt="comunidades energéticas">
-            </div>
-            <div>
-                <h2>Comunidades energéticas</h2>
-                <hr>
-                <p>Las comunidades energéticas representan un modelo emergente basado en la cooperación local para la
-                    producción y consumo de energía renovable. Estas comunidades permiten a los ciudadanos generar su
-                    propia electricidad, principalmente mediante paneles solares, y compartir el excedente con sus
-                    vecinos. Este enfoque fomenta la independencia energética, reduce costos y promueve una mayor
-                    conciencia ambiental. Además, fortalece los lazos sociales y contribuye a una economía más circular
-                    y resiliente frente a crisis energéticas.</p>
-            </div>
+        <div>
+          <img src="img/tendencia1.jpg" alt="tendencia" class="imagen" />
         </div>
+      </div>
+      <div class="consumo">
+        <div>
+          <img src="img/comunidad1.jpg" alt="comunidades energéticas" />
+        </div>
+        <div>
+          <h2>Comunidades energéticas</h2>
+          <hr />
+          <p>
+            Las comunidades energéticas representan un modelo emergente basado
+            en la cooperación local para la producción y consumo de energía
+            renovable. Estas comunidades permiten a los ciudadanos generar su
+            propia electricidad, principalmente mediante paneles solares, y
+            compartir el excedente con sus vecinos. Este enfoque fomenta la
+            independencia energética, reduce costos y promueve una mayor
+            conciencia ambiental. Además, fortalece los lazos sociales y
+            contribuye a una economía más circular y resiliente frente a crisis
+            energéticas.
+          </p>
+        </div>
+      </div>
     </div>
     <!-- !-- FIN DE CONSUMO, INNOVACION Y TENDENCIAS Y COMUNIDADES ENERGETICAS -->
 
     <div class="opinion">
-        <h2>Tu opinion cuenta</h2>
-        <p>Formulario o encuesta.</p>
-        <!-- Se agregó imagen -->
-        <img src="img/encuesta1.jpg" alt="encuesta">
+      <h2>Tu opinion cuenta</h2>
+      <p>Formulario o encuesta.</p>
+      <!-- Se agregó imagen -->
+      <img src="img/encuesta1.jpg" alt="encuesta" />
     </div>
 
     <footer class="footer">
-        <div class="footer-container">
-            <div class="footer-section">
-                <h3>Sobre Nosotros</h3>
-                <p>
-                    Comprometidos con el futuro del planeta a través de soluciones
-                    solares inteligentes y sostenibles.
-                </p>
-            </div>
-            <div class="footer-section">
-                <h3>Contacto</h3>
-                <p>Email: <a href="mailto:contacto@Energiarinnovabile.com">contacto@Energiarinnovabile.com</a></p>
-                <p>Tel: <a href="tel:+57 320 000 0000">+57 320 000 0000</a></p>
-                <p>Medellín, Colombia</p>
-            </div>
-            <div class="footer-section">
-                <h3>Síguenos</h3>
-                <div class="social-icons">
-                    <a href="#"><img src="icons/facebook.svg" alt="Facebook" /></a>
-                    <a href="#"><img src="icons/instagram.svg" alt="Instagram" /></a>
-                    <a href="#"><img src="icons/linkedin.svg" alt="LinkedIn" /></a>
-                </div>
-            </div>
+      <div class="footer-container">
+        <div class="footer-section">
+          <h3>Sobre Nosotros</h3>
+          <p>
+            Comprometidos con el futuro del planeta a través de soluciones
+            solares inteligentes y sostenibles.
+          </p>
         </div>
-        <div class="footer-bottom">
-            <p>&copy; 2025 Vieta Renovabili. Todos los derechos reservados.</p>
+        <div class="footer-section">
+          <h3>Contacto</h3>
+          <p>
+            Email:
+            <a href="mailto:contacto@Energiarinnovabile.com"
+              >contacto@Energiarinnovabile.com</a
+            >
+          </p>
+          <p>Tel: <a href="tel:+57 320 000 0000">+57 320 000 0000</a></p>
+          <p>Medellín, Colombia</p>
         </div>
+        <div class="footer-section">
+          <h3>Síguenos</h3>
+          <div class="social-icons">
+            <a href="#"><img src="icons/facebook.svg" alt="Facebook" /></a>
+            <a href="#"><img src="icons/instagram.svg" alt="Instagram" /></a>
+            <a href="#"><img src="icons/linkedin.svg" alt="LinkedIn" /></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Vieta Renovabili. Todos los derechos reservados.</p>
+      </div>
     </footer>
-
 
     <script src="js/validar_botones.js"></script>
     <script src="js/validar_sesion.js"></script>
-</body>
-
+  </body>
 </html>

@@ -29,6 +29,7 @@ p {
 
 /* COMIENZAN LOS ESTILOS DE LA BARRA Y EL NAVBAR (BARRA DE NAVEGACIÓN). */
 
+
 .navbar {
   position: sticky;
   top: 0;
@@ -37,8 +38,7 @@ p {
   justify-content: space-between;
   align-items: center;
 
-  min-height: 50px;
-  /* ⇪ grosor vertical */
+  min-height: 50px;/* ⇪ grosor vertical */
   text-align: center;
   padding: 0 2.5rem;
 
@@ -49,6 +49,8 @@ p {
   /* efecto ‘vidrio esmerilado’ */
 
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+
+  
 }
 
 /* 2. LOGO / TÍTULO ────────────────────────────────────────────── */
