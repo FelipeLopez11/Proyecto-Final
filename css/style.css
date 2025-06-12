@@ -25,12 +25,18 @@ h1 {
 p {
   font-size: 20px;
 }
+
 .portada-img {
-  display: block; /* Para poder usar margin auto si quieres centrarla */
-  width: 800px; /* Anchura fija en píxeles (o usa %: width: 100%;) */
-  height: 400px; /* Altura fija */
-  object-fit: cover; /* Recorta/escala la imagen para cubrir el área sin deformar */
-  margin: 0 auto; /* Centra horizontalmente */
+  display: block;
+  /* Para poder usar margin auto si quieres centrarla */
+  width: 800px;
+  /* Anchura fija en píxeles (o usa %: width: 100%;) */
+  height: 400px;
+  /* Altura fija */
+  object-fit: cover;
+  /* Recorta/escala la imagen para cubrir el área sin deformar */
+  margin: 0 auto;
+  /* Centra horizontalmente */
 }
 
 /* TERMINA LOS ESTILOS GLOBALES */
@@ -131,6 +137,7 @@ input[type="password"] {
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: center;
   gap: 20px;
 }
 
@@ -142,6 +149,8 @@ input[type="password"] {
   width: 100%;
   max-width: 600px;
 }
+
+
 
 .form-group {
   margin-bottom: 15px;
@@ -251,10 +260,16 @@ select {
 .main-container {
   max-width: 900px;
   margin: auto;
+  text-align: center;
 }
 
 .grafico {
   margin-bottom: 50px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin: 0 40px;
+
 }
 
 canvas {
@@ -266,9 +281,11 @@ canvas {
 }
 
 .fuentes-bibiograficas {
-  font-size: 0.9em;
+  font-size: 20px;
   color: #555;
   margin-top: 40px;
   padding: 10px;
   border-top: 1px solid #ccc;
+  text-align: left;
+
 }

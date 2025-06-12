@@ -5,10 +5,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Acerca De Nosotros</title>
-    <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/we.css">
     <link rel="stylesheet" href="css/nav_footer.css">
-
 </head>
 
 
@@ -82,16 +80,44 @@
 
     <div class="nosotros we">
         <h1>¡Sobre Nosotros!</h1>
-        <section class="galeria galeriaNosotros">
+        <section class="galeria galeriaNosotros"">
+        <section class=" galeria galeriaNosotros" onclick="openModal('modal-felipe')">
             <figure class="galeria-item">
                 <img src="img/perfil1.jpg" alt="Persona 1" />
                 <figcaption>Juan Felipe</figcaption>
             </figure>
+        </section>
+
+        <section class="galeria galeriaNosotros" onclick="openModal('modal-estiven')">
             <figure class="galeria-item">
                 <img src="img/perfil2.jpg" alt="Persona 2" />
                 <figcaption>Estiven Grajales</figcaption>
             </figure>
         </section>
+        </section>
+
+        <div id="modal-felipe" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal ('modal-felipe')">&times;</span>
+
+                <!-- Uso "<b></b>" para colocar en negrita -->
+                <p><b>Nombre: </b> Juan Felipe López</p>
+                <p><b>Edad: </b> 25 años</p>
+                <p><b>Estudio: </b> Ingeniero de sistemas</p>
+                <p><b>Cargo: </b> Desarrollador backend Python Django </p>
+            </div>
+        </div>
+
+        <div id="modal-estiven" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal ('modal-estiven')">&times;</span>
+                <!-- Uso "<b></b>" para colocar en negrita -->
+                <p><b>Nombre: </b> Estiven Grajales Giraldo</p>
+                <p><b>Edad: </b> 28 años</p>
+                <p><b>Estudio: </b> Ingeniero de sistemas</p>
+                <p><b>Cargo: </b> Desarrollador backend JavaScript Node-js </p>
+            </div>
+        </div>
 
         <div class="container-mision">
             <section class="section1">

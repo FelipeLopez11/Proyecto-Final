@@ -33,11 +33,15 @@ body {
 /* TIPOGRAFÍA MÁS ATRACTIVA PARA LOS PÁRRAFOS PRINCIPALES */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap");
 
+p {
+  font-size: 25px !important;
+}
+
 .texto p,
 .intro-text p {
   font-family: "Poppins", sans-serif;
   /* letra moderna y legible   */
-  font-size: 1.1rem;
+  font-size: 1.9rem;
   /* algo más grande           */
   font-weight: 500;
   /* seminegrita para énfasis   */
@@ -67,6 +71,10 @@ body {
   padding: 0;
 }
 
+/* .main-funcionamiento p{
+  font-size: 250px;
+} */
+
 .imagen-galeria img {
   max-width: 100%;
   display: block;
@@ -90,9 +98,12 @@ body {
 }
 
 .st h1 {
-  font-size: 2.8rem; /* título muy visible */
-  color: #096f60; /* verde oscuro */
-  margin-bottom: 20px; /* espacio debajo del título */
+  font-size: 2.8rem;
+  /* título muy visible */
+  color: #096f60;
+  /* verde oscuro */
+  margin-bottom: 20px;
+  /* espacio debajo del título */
 }
 
 .st h2 {
@@ -104,7 +115,7 @@ body {
   /* espacio debajo del título */
 }
 
-.st h2 {
+.st h3 {
   font-size: 2.8rem;
   /* título muy visible */
   color: #096f60;
@@ -205,7 +216,9 @@ body {
 .cards .card:nth-child(3) {
   grid-area: card3;
 }
-.cards, .card ul li {
+
+.cards,
+.card ul li {
   text-align: left;
   text-decoration: none;
 
@@ -280,7 +293,7 @@ body {
 .card p,
 .card li,
 .tip li {
-  font-size: 0.95rem;
+  font-size: 25px;
 }
 
 /* ─── RESPONSIVE (≤ 768 px) ────────────────────────────────── */

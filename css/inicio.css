@@ -98,10 +98,13 @@ body {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   position: relative;
 }
+
 .item h3 {
   /* título muy visible */
-  color: #096f60; /* verde oscuro */
-  margin-bottom: 20px; /* espacio debajo del título */
+  color: #096f60;
+  /* verde oscuro */
+  margin-bottom: 20px;
+  /* espacio debajo del título */
 }
 
 .close {
@@ -138,8 +141,10 @@ body {
 .consumo h2 {
   font-size: 35px;
   text-align: center;
-  color: #096f60; /* verde oscuro */
-  margin-bottom: 20px; /* espacio debajo del título */
+  color: #096f60;
+  /* verde oscuro */
+  margin-bottom: 20px;
+  /* espacio debajo del título */
 }
 
 .consumo p {
@@ -166,10 +171,14 @@ body {
   margin: 20px auto;
   font-size: 25px;
 }
+
 .opinion h2 {
-  font-size: 2.8rem; /* título muy visible */
-  color: #096f60; /* verde oscuro */
-  margin-bottom: 20px; /* espacio debajo del título */
+  font-size: 2.8rem;
+  /* título muy visible */
+  color: #096f60;
+  /* verde oscuro */
+  margin-bottom: 20px;
+  /* espacio debajo del título */
 }
 
 /* Se agrega estilo a imagen de opinion  */
@@ -205,7 +214,7 @@ body {
   background-color: #e8f7e9;
 }
 
-.energia-img {
+.hero-img {
   flex: 1 1 400px;
   /* ocupa espacio según disponible */
   max-width: 100%;
@@ -217,7 +226,8 @@ body {
 }
 
 .energia-text {
-  text-align: left; /* texto alineado a la izquierda */
+  text-align: left;
+  /* texto alineado a la izquierda */
   border-radius: 8px;
 }
 
